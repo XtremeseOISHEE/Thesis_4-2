@@ -1,0 +1,10 @@
+case,labeled_condition,A_output_words,B_hops,B_guideline_refs,C_supported,C_partial,C_unsupported
+case_057_SEPSIS_AKI_Nephrology.txt,"SEPSIS, AKI",161,3,6,0,1,2
+case_024_SEPSIS_SOAP___Chart___Progress_Notes.txt,SEPSIS,54,3,6,0,3,0
+case_012_SEPSIS_AKI_SOAP___Chart___Progress_Notes.txt,"SEPSIS, AKI",148,3,6,0,0,3
+case_051_AKI_Nephrology.txt,AKI,144,3,6,2,1,0
+case_056_SEPSIS_AKI_Nephrology.txt,"SEPSIS, AKI",139,3,6,1,2,0
+case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt,"SEPSIS, PNEUMONIA, AKI",132,3,6,3,0,0
+case_034_PNEUMONIA_AKI_SOAP___Chart___Progress_Notes.txt,"PNEUMONIA, AKI",103,3,6,0,0,3
+case_041_AKI_SOAP___Chart___Progress_Notes.txt,AKI,255,3,6,0,0,3
+case_035_AKI_SOAP___Chart___Progress_Notes.txt,AKI,99,3,6,0,1,2

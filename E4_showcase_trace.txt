@@ -1,0 +1,86 @@
+######################################################################
+# E4 SHOWCASE: case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt
+# Labeled condition: SEPSIS, PNEUMONIA, AKI
+######################################################################
+
+PATIENT CASE (excerpt):
+REASON FOR CONSULTATION:, Acute renal failure.,HISTORY: , Limited data is available; I have reviewed his admission notes. Apparently this man was found down by a family member, was taken to Medical Center, and subsequently flown here. He has got respiratory failure, multi-organ system failure syndrome, and has renal insufficiency, as well. Markers of renal function have been fairly stable. I do not presently see indicators that he historically has been oliguric. The BUN and creatinine have been ...
+
+======================================================================
+  SYSTEM A: Single-shot (no guidelines, no verification)
+======================================================================
+**Most Likely Diagnosis:**
+Acute Kidney Injury (AKI) likely due to Acute Tubular Necrosis (ATN) secondary to ischemia or toxin exposure, in the context of multi-organ failure and sepsis.
+
+**Recommended Initial Management:**
+
+1. **Continue supportive care**: Maintain fluid resuscitation, mechanical ventilation, and parenteral nutrition.
+2. **Optimize renal perfusion**: Ensure adequate blood pressure and perfusion to the kidneys.
+3. **Monitor and manage electrolytes**: Closely monitor electrolytes, especially potassium, and manage any imbalances.
+4. **Adjust medications**: Withhold or adjust nephrotoxic medications (e.g., lisinopril, diuretics) and ensure dose adjustment of antibiotics according to renal function.
+5. **Investigate and manage underlying causes**: Further investigate the cause of AKI, including potential ischemic or toxic insults, and manage accordingly.
+
+======================================================================
+  SYSTEM B: Multi-hop + guidelines (NO verification)
+======================================================================
+
+[Hop 1: Identification]
+Based on the patient's symptoms and presentation, the most likely primary condition is sepsis with possible progression to septic shock. The patient's presentation with respiratory failure, multi-organ system failure syndrome, and renal insufficiency, along with the need for mechanical ventilation, IV fluid resuscitation, and broad-spectrum antibiotic coverage, suggests a severe infection. The presence of hypotension (implied by the need for volume resuscitation) and multi-organ dysfunction also supports this diagnosis, although the qSOFA score and septic shock criteria cannot be fully evaluated with the provided information.
+(guidelines retrieved: ['sepsis/screening', 'sepsis/septic_shock'] -- but NOT verified)
+
+[Hop 2: Diagnostic Confirmation]
+To confirm the condition of sepsis with possible progression to septic shock in this patient, we need to look for diagnostic criteria that align with clinical guidelines. Although specific lab values such as white blood cell count, lactate, procalcitonin, and C-reactive protein are not provided, the patient's clinical presentation suggests sepsis. The qSOFA criteria cannot be fully evaluated due to missing data, but the presence of respiratory failure (implied by the need for mechanical ventilation) and renal insufficiency (suggested by stable but likely elevated BUN and creatinine) supports organ dysfunction.
+
+Given the information provided, we can infer that the patient likely meets the qSOFA criteria due to his respiratory failure (mechanical ventilation implies a respiratory rate of at least 22/min or significant respiratory distress) and possible altered mentation (though not directly stated, intubation and mechanical ventilation suggest a level of illness that could imply altered mental status). 
+
+The elevated CPK of 1500 could suggest muscle injury, but in the context of sepsis, it might also reflect a secondary effect rather than a primary diagnosis like rhabdomyolysis, especially with normal phosphorus levels and no myoglobinuria or elevated serum myoglobin. The patient's hypotension (implied by the need for IV fluid resuscitation) and multi-organ dysfunction (respiratory failure, renal insufficiency) are critical for diagnosing septic shock.
+
+Specific values that would support sepsis include an elevated white blood cell count or lactate if available. However, the provided information focuses more on clinical presentation and treatment interventions, which align with a diagnosis of sepsis and possible septic shock. 
+
+In summary, while direct lab values supporting sepsis are limited, the clinical context (respiratory failure, renal insufficiency, need for mechanical ventilation, IV fluid resuscitation, and broad-spectrum antibiotics) strongly suggests sepsis with possible progression to septic shock.
+(guidelines retrieved: ['sepsis/screening', 'sepsis/labs'] -- but NOT verified)
+
+[Hop 3: Management]
+The recommended initial management for this patient with sepsis and possible progression to septic shock includes administering broad-spectrum antibiotics, which he is already receiving. Additionally, ensuring adequate fluid resuscitation is crucial; although the patient has received IV fluid resuscitation, ongoing assessment of fluid status and potential need for further resuscitation is necessary. The patient's lactate level should be measured to guide further fluid and vasopressor management to maintain a mean arterial pressure (MAP) of 65 mmHg or greater.
+(guidelines retrieved: ['sepsis/treatment', 'sepsis/screening'] -- but NOT verified)
+
+======================================================================
+  SYSTEM C: Multi-hop + guidelines + VERIFICATION (full system)
+======================================================================
+
+[Hop 1: Identification]
+The patient's primary condition is likely acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock, given his history of cardiovascular disease, medications (e.g., digoxin, Imdur, Lasix), and presentation with multi-organ system failure syndrome. The patient's stable renal function markers and lack of oliguria also suggest that the renal failure may be intrinsic but not severely progressed. Additionally, the patient's volume overload status (edematous) and use of diuretics (Lasix) support a cardiac-related etiology.
+  VERIFICATION [OK] SUPPORTED
+  WHY: The claim's principle that AKI can be caused by heart failure reducing renal perfusion, which is a prerenal cause of AKI, matches the guideline's categorization of AKI etiology, specifically mentioning heart failure as a cause of prerenal AKI.
+  Guidelines checked: ['aki/causes', 'aki/treatment']
+
+[Hop 2: Diagnostic Confirmation]
+To support or confirm the condition of acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock, several diagnostic criteria and clinical findings are relevant. The patient's laboratory results showing a CPK level of 1500, which, although not extremely elevated, could indicate some degree of muscle injury but not to the extent that would typically cause significant rhabdomyolysis. The serum calcium is low, which can be seen in various conditions including AKI and ADHF, possibly due to complex interplay of factors including vitamin D and parathyroid hormone alterations, and also due to citrate in blood products or albumin levels, but specific values are not provided.
+
+The patient's renal function markers, including BUN and creatinine, have been fairly stable, suggesting that despite AKI, the renal function has not significantly deteriorated to the point of oliguria or severe azotemia. The absence of myoglobinuria or elevated serum myoglobin levels helps rule out rhabdomyolysis as a primary cause of AKI. 
+
+The clinical presentation of volume overload (edematous), respiratory failure requiring mechanical ventilation, and the use of cardiovascular medications (e.g., digoxin, Imdur, Lasix) support a cardiac-related etiology for AKI. 
+
+Specific vital and lab values that would further support ADHF or cardiogenic shock include:
+- Low serum calcium 
+- Elevated CPK (though not in the range typically causing rhabdomyolysis)
+- Stable but likely elevated BUN and creatinine (specific values not provided)
+
+These findings, combined with the patient's history and physical examination (e.g., edematous, mechanically ventilated), suggest that the patient's AKI is likely secondary to a cardiac cause rather than a primary renal or other systemic cause. Further diagnostic testing, including echocardiography and possibly invasive hemodynamic monitoring, would be necessary to confirm ADHF or cardiogenic shock.
+  VERIFICATION [OK] SUPPORTED
+  WHY: The claim's clinical principle that AKI can be caused by prerenal factors such as heart failure reducing renal perfusion, which aligns with the guideline's AKI etiology categories, specifically mentioning "heart failure reducing renal perfusion" as a prerenal cause of AKI.
+  Guidelines checked: ['aki/causes', 'aki/diagnosis']
+
+[Hop 3: Management]
+The recommended initial management approach for this patient with acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock would involve optimizing cardiac function and hemodynamics. This would include the use of inotropes or vasopressors as needed to maintain adequate blood pressure and perfusion of vital organs, as well as diuretics (e.g., titrating Lasix) to manage volume overload, while closely monitoring renal function and electrolytes. Additionally, ensuring adequate fluid resuscitation and continuing broad-spectrum antibiotics and parenteral nutrition as already initiated would be crucial in managing this patient's multi-organ system failure syndrome.
+  VERIFICATION [OK] SUPPORTED
+  WHY: The claim's principle of optimizing volume status and hemodynamics, maintaining adequate blood pressure, and monitoring renal function and electrolytes aligns with the guideline's recommendations to "optimize volume status and hemodynamics, maintain mean arterial pressure" and "monitor electrolytes and acid-base balance" in AKI management.
+  Guidelines checked: ['aki/treatment', 'aki/causes']
+
+======================================================================
+  KEY TAKEAWAY
+======================================================================
+System A: gives an answer, but you cannot audit it against any guideline.
+System B: uses guidelines to reason, but never checks if it stayed faithful.
+System C: every hop is explicitly verified against a clinical guideline,
+          making the entire reasoning chain auditable.

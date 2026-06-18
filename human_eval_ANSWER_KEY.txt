@@ -1,0 +1,7 @@
+SECRET ANSWER KEY - do NOT share with raters
+==================================================
+CASE 1: Output 1 = System C, Output 2 = System A
+CASE 2: Output 1 = System A, Output 2 = System C
+CASE 3: Output 1 = System A, Output 2 = System C
+CASE 4: Output 1 = System A, Output 2 = System C
+CASE 5: Output 1 = System C, Output 2 = System A

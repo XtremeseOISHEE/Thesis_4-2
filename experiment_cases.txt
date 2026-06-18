@@ -1,0 +1,9 @@
+E:/Oishee/Thesis/cases\case_057_SEPSIS_AKI_Nephrology.txt
+E:/Oishee/Thesis/cases\case_024_SEPSIS_SOAP___Chart___Progress_Notes.txt
+E:/Oishee/Thesis/cases\case_012_SEPSIS_AKI_SOAP___Chart___Progress_Notes.txt
+E:/Oishee/Thesis/cases\case_051_AKI_Nephrology.txt
+E:/Oishee/Thesis/cases\case_056_SEPSIS_AKI_Nephrology.txt
+E:/Oishee/Thesis/cases\case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt
+E:/Oishee/Thesis/cases\case_034_PNEUMONIA_AKI_SOAP___Chart___Progress_Notes.txt
+E:/Oishee/Thesis/cases\case_041_AKI_SOAP___Chart___Progress_Notes.txt
+E:/Oishee/Thesis/cases\case_035_AKI_SOAP___Chart___Progress_Notes.txt

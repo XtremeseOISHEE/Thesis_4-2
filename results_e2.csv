@@ -1,0 +1,9 @@
+condition,ground_truth,verdict,matched
+sepsis,correct,SUPPORTED,True
+sepsis,incorrect,UNSUPPORTED,True
+sepsis,correct,SUPPORTED,True
+sepsis,incorrect,UNSUPPORTED,True
+aki,correct,SUPPORTED,True
+aki,incorrect,UNSUPPORTED,True
+aki,correct,SUPPORTED,True
+aki,incorrect,UNSUPPORTED,True

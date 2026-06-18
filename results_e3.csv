@@ -1,0 +1,7 @@
+case,1-hop_S,1-hop_P,1-hop_U,2-hop_S,2-hop_P,2-hop_U,3-hop_S,3-hop_P,3-hop_U
+case_057_SEPSIS_AKI_Nephrology.txt,0,0,1,0,0,2,0,0,3
+case_024_SEPSIS_SOAP___Chart___Progress_Notes.txt,0,1,0,1,1,0,1,2,0
+case_051_AKI_Nephrology.txt,0,1,0,0,2,0,1,2,0
+case_056_SEPSIS_AKI_Nephrology.txt,0,1,0,0,2,0,1,2,0
+case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt,0,1,0,2,0,0,3,0,0
+case_035_AKI_SOAP___Chart___Progress_Notes.txt,0,0,1,0,0,2,0,1,2

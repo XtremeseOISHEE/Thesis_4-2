@@ -1,0 +1,206 @@
+######################################################################
+CASE 1
+######################################################################
+
+PATIENT SUMMARY:
+Acute renal failure, suspected, likely due to multi-organ system failure syndrome.
+
+--------------------------------------------------
+OUTPUT 1:
+--------------------------------------------------
+  Step - Hop 1: Identification:
+    Reasoning: The patient's primary condition is likely acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock, given his history of cardiovascular disease, medications (e.g., Imdur, digoxin, Lasix), and presentation with multi-organ system failure syndrome. The patient's stable renal function markers and lack of oliguria also suggest that the renal failure may be intrinsic but not severely progressed. Additionally, the patient's volume overload status, as suggested by edema and treatment with Lasix and terazosin, supports a cardiac-related etiology.
+    [Guideline check: SUPPORTED] The claim's principle that AKI can be caused by heart failure reducing renal perfusion, a prerenal cause, is supported by the guideline, which lists heart failure as a cause of prerenal AKI and recommends optimizing volume status and hemodynamics, aligning with the claim's discussion of cardiac-related etiology and volume overload.
+
+  Step - Hop 2: Diagnostic Confirmation:
+    Reasoning: To support or confirm the condition of acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock, several diagnostic criteria and clinical findings can be referenced:
+
+1. **Stable Renal Function Markers**: The patient's BUN and creatinine levels have been fairly stable, which suggests that the renal failure is not severely progressed and might be intrinsic. Specific values are not provided, but the stability of these markers indicates that the kidney injury is not rapidly progressive.
+
+2. **Markers of Cardiac Disease and Volume Overload**: The patient is on medications such as Imdur (isosorbide dinitrate), digoxin, Lasix (furosemide), and terazosin, which are indicative of cardiovascular disease, including congestive heart failure (CHF) and hypertension. The presence of edema and the use of diuretics (Lasix and terazosin) suggest volume overload, a common finding in ADHF.
+
+3. **Laboratory Findings**: The patient had a CPK level of 1500, which, although elevated, does not strongly support rhabdomyolysis as a cause of AKI, especially with normal phosphorus levels and no evidence of myoglobinuria or elevated serum myoglobin. The low serum calcium level could be seen in the context of AKI or other critical illnesses.
+
+Given these points, the diagnostic criteria supporting AKI in the context of ADHF or cardiogenic shock include the patient's history of cardiovascular disease, the use of cardioactive medications, signs of volume overload (edema, diuretic use), and the absence of severe oliguria or rapidly worsening renal function. Specific lab values (e.g., stable BUN and creatinine, CPK of 1500) help to guide the differential diagnosis and support the clinical impression.
+    [Guideline check: SUPPORTED] The claim's clinical principle that AKI can be caused by heart failure reducing renal perfusion, which aligns with the guideline's categorization of prerenal AKI causes, including heart failure.
+
+  Step - Hop 3: Management:
+    Reasoning: The recommended initial management approach for this patient with acute kidney injury (AKI) secondary to acute decompensated heart failure (ADHF) or cardiogenic shock includes optimizing cardiac function and perfusion through the use of inotropes or vasopressors as needed, and ensuring adequate volume status with diuresis to reduce volume overload while avoiding further renal insult. Additionally, continuation of good broad-spectrum antibiotic coverage, mechanical ventilation support, and parenteral nutrition as already provided is crucial. Close monitoring of renal function, electrolytes, and fluid status is also essential to guide further management and potential interventions such as dialysis if the patient's renal function deteriorates.
+    [Guideline check: PARTIAL] The claim's principles of optimizing volume status and hemodynamics, monitoring electrolytes and acid-base balance, and considering interventions like dialysis are supported by the guideline, but the claim also asserts continuation of antibiotics, mechanical ventilation, and parenteral nutrition, which are not mentioned in the guideline.
+
+
+--------------------------------------------------
+OUTPUT 2:
+--------------------------------------------------
+**Most Likely Diagnosis:**
+Acute Kidney Injury (AKI) likely due to Acute Tubular Necrosis (ATN) secondary to ischemia or toxin exposure, in the context of multi-organ failure and sepsis.
+
+**Recommended Initial Management:**
+
+1. **Continue supportive care**: Maintain fluid resuscitation, mechanical ventilation, and parenteral nutrition.
+2. **Optimize renal perfusion**: Ensure adequate blood pressure and perfusion to the kidneys.
+3. **Monitor and manage electrolytes**: Closely monitor electrolytes, especially potassium, and manage as needed.
+4. **Dose adjustment of medications**: Adjust doses of medications that are nephrotoxic or require renal dose adjustment.
+5. **Investigate and manage underlying causes**: Continue to investigate the underlying cause of AKI and manage accordingly (e.g., rule out obstruction, consider renal ultrasound).
+6. **Renal replacement therapy (RRT)**: Consider initiating RRT if AKI persists or worsens, or if there are signs of uremia or fluid overload.
+
+
+######################################################################
+CASE 2
+######################################################################
+
+PATIENT SUMMARY:
+Renal failure evaluation for possible dialysis therapy.  Acute kidney injury of which etiology is unknown at this time, with progressive azotemia unresponsive to IV fluids.
+
+--------------------------------------------------
+OUTPUT 1:
+--------------------------------------------------
+**Most Likely Diagnosis:** 
+Rapidly Progressive Glomerulonephritis (RPGN) or Acute Kidney Injury (AKI) likely due to a renal condition such as Focal Segmental Glomerulosclerosis (FSGS) given the nephrotic range proteinuria, microscopic hematuria, and family history of renal disease.
+
+**Recommended Initial Management:**
+1. **Continue Monitoring and Supportive Care:** Close monitoring of electrolytes, fluid status, and renal function.
+2. **Renal Replacement Therapy (RRT) Evaluation:** Given the patient's symptoms and lab values (high BUN, creatinine, and potassium), consider initiating dialysis or other forms of RRT.
+3. **Kidney Biopsy:** To obtain a definitive diagnosis, especially to differentiate between FSGS, RPGN, or other causes of AKI and nephrotic syndrome.
+4. **Discontinue Potential Nephrotoxins:** Stop creatine protein drinks and ensure no other nephrotoxic substances are being used.
+5. **Manage Electrolytes:** Continue Kayexalate as needed for hyperkalemia and address any other electrolyte imbalances.
+6. **Consult Nephrology:** For guidance on management and potential need for kidney biopsy.
+
+--------------------------------------------------
+OUTPUT 2:
+--------------------------------------------------
+  Step - Hop 1: Identification:
+    Reasoning: The most likely primary condition in this patient is acute kidney injury (AKI) likely due to acute tubular necrosis (ATN) or a rapidly progressive glomerulonephritis (RPGN) given the presence of nephrotic range proteinuria, microscopic hematuria, and a significant elevation in creatinine. The patient's history of creatine protein supplement use, decreased urine output, and laboratory results support this diagnosis. The patient's family history of diabetes and end-stage renal disease also raises the possibility of a underlying renal disease process.
+    [Guideline check: PARTIAL] The claim's principle of identifying AKI and considering intrinsic renal causes, such as acute tubular necrosis (ATN) and glomerulonephritis, aligns with the guideline's AKI definition and etiology categories, but it also introduces additional details (nephrotic range proteinuria, microscopic hematuria, creatine protein supplement use, family history of diabetes and end-stage renal disease) that are not covered or directly mentioned in the guideline.
+
+  Step - Hop 2: Diagnostic Confirmation:
+    Reasoning: The patient's laboratory results support the diagnosis of acute kidney injury (AKI) with a significant elevation in creatinine (6.9 mg/dL) and blood urea nitrogen (BUN) (109 mg/dL), indicating a severe decline in renal function. The presence of nephrotic range proteinuria (protein-creatinine ratio of 9 gm) and microscopic hematuria on urinalysis also suggests significant kidney damage, consistent with a diagnosis of AKI possibly due to ATN or RPGN. Additionally, the patient's low albumin level (1.9) may indicate significant protein loss through the kidneys, further supporting the diagnosis of a severe renal condition.
+    [Guideline check: PARTIAL] The claim's core principle of diagnosing AKI based on elevated creatinine and BUN levels is supported by the guideline, but the claim also mentions additional findings (nephrotic range proteinuria, microscopic hematuria, and low albumin level) that are not directly addressed in the provided guideline text, which focuses on diagnostic criteria (creatinine increase, urine volume) and basic laboratory monitoring (creatinine, BUN, electrolytes, urinalysis).
+
+  Step - Hop 3: Management:
+    Reasoning: The recommended initial management approach for this patient with acute kidney injury (AKI) likely due to acute tubular necrosis (ATN) or rapidly progressive glomerulonephritis (RPGN) includes aggressive fluid resuscitation and close monitoring of electrolytes, urine output, and renal function. The patient should continue to receive IV hydration fluids, and electrolyte imbalances, particularly hyperkalemia, should be managed with medications such as Kayexalate, as already initiated. Additionally, a renal replacement therapy, such as dialysis, may be necessary if the patient's renal function does not improve with conservative management, given his severe symptoms and laboratory abnormalities.
+    [Guideline check: SUPPORTED] The claim's principles of optimizing volume status with aggressive fluid resuscitation, monitoring electrolytes and renal function, managing electrolyte imbalances like hyperkalemia, and considering renal replacement therapy for severe symptoms or lack of improvement align with the guideline's recommendations to "treat underlying cause, optimize volume status and hemodynamics," "monitor electrolytes and acid-base balance," and "consider renal replacement therapy for refractory hyperkalemia, acidosis, fluid overload, or uremia."
+
+
+
+######################################################################
+CASE 3
+######################################################################
+
+PATIENT SUMMARY:
+Patient with a diagnosis of pancreatitis, developed hypotension and possible sepsis and respiratory, as well as renal failure.
+
+--------------------------------------------------
+OUTPUT 1:
+--------------------------------------------------
+**Most Likely Diagnosis:** 
+Acute Kidney Injury (AKI) likely due to Acute Tubular Necrosis (ATN) secondary to hypotension, sepsis, and possible nephrotoxic effects of medications.
+
+**Recommended Initial Management:**
+1. **Fluid Resuscitation:** Continue and optimize fluid administration to improve renal perfusion, considering the patient's current fluid status and recent blood pressure readings.
+2. **Electrolyte Management:** Address hypokalemia and acidosis; consider adjusting the bicarbonate infusion and potassium supplementation as needed.
+3. **Vasopressor Management:** Reassess the need for continued Levophed support to ensure adequate blood pressure and renal perfusion.
+4. **Medication Review:** Review and adjust medications for potential nephrotoxic effects, ensuring antibiotics and other essential medications are optimized for renal function.
+5. **Renal Replacement Therapy (RRT) Consideration:** Given the patient's severe AKI, acidosis, and electrolyte imbalances, consider initiating RRT (e.g., continuous renal replacement therapy or intermittent hemodialysis) to manage fluid overload, electrolyte disturbances, and acid-base status.
+
+--------------------------------------------------
+OUTPUT 2:
+--------------------------------------------------
+  Step - Hop 1: Identification:
+    Reasoning: The patient's primary condition is likely acute kidney injury (AKI) secondary to acute tubular necrosis (ATN) given the significant increase in creatinine from 2.1 to 4.2, minimal urine output, and florid acidosis. The patient's history of pancreatitis, hypotension, and possible sepsis also supports this diagnosis, as these conditions can lead to decreased renal perfusion and ATN. Additionally, the patient's laboratory results showing hyponatremia, hypokalemia, and metabolic acidosis are consistent with AKI.
+    [Guideline check: PARTIAL] The claim's principle of renal involvement in sepsis, indicated by elevated creatinine, aligns with the guideline, but the claim also asserts additional conditions (acute kidney injury, acute tubular necrosis, and specific electrolyte imbalances) that are not directly covered or contradicted by the guideline, which focuses on sepsis markers and septic shock criteria.
+
+  Step - Hop 2: Diagnostic Confirmation:
+    Reasoning: To confirm the diagnosis of acute kidney injury (AKI) secondary to acute tubular necrosis (ATN), several diagnostic criteria support this condition. The patient's significant increase in creatinine from 2.1 to 4.2 overnight, along with a BUN level of 36, indicates a rapid decline in renal function. Furthermore, the patient's minimal urine output, severe metabolic acidosis with a bicarbonate level of 13, and electrolyte imbalances, including hyponatremia (sodium 152) and hypokalemia (potassium 2.7), are consistent with AKI and ATN.
+    [Guideline check: SUPPORTED] The claim's clinical principles, including a significant increase in serum creatinine, minimal urine output, metabolic acidosis, and electrolyte imbalances, are all supported by the guideline's diagnostic criteria and laboratory monitoring recommendations for AKI.
+
+  Step - Hop 3: Management:
+    Reasoning: The recommended initial management for acute kidney injury (AKI) secondary to acute tubular necrosis (ATN) in this patient includes fluid resuscitation to optimize renal perfusion, discontinuation of nephrotoxic medications if possible, and close monitoring of electrolytes and fluid status. Additionally, the patient's acid-base disturbance and electrolyte imbalances, such as severe metabolic acidosis and hypokalemia, should be addressed through adjustments to the IV fluids, including the half-normal saline and bicarbonate infusion. The patient's vasopressor support with Levophed should also be continued to maintain adequate blood pressure and renal perfusion.
+    [Guideline check: SUPPORTED] The claim's principles of optimizing volume status and hemodynamics (fluid resuscitation, discontinuation of nephrotoxic medications, and monitoring of electrolytes and fluid status), and maintaining mean arterial pressure (with vasopressor support) are all endorsed by the guideline, which recommends "optimizing volume status and hemodynamics," "discontinuing nephrotoxic agents," and "maintaining mean arterial pressure" in AKI management.
+
+
+
+######################################################################
+CASE 4
+######################################################################
+
+PATIENT SUMMARY:
+Sepsis due to urinary tract infection.
+
+--------------------------------------------------
+OUTPUT 1:
+--------------------------------------------------
+**Most Likely Diagnosis:** 
+Sepsis due to urinary tract infection (UTI) caused by Escherichia coli.
+
+**Recommended Initial Management:** 
+Continue doripenem for UTI, monitor renal function and adjust antibiotics as needed, ensure adequate hydration and hemodynamic stability, and manage underlying conditions such as diabetes and ischemic cardiomyopathy.
+
+--------------------------------------------------
+OUTPUT 2:
+--------------------------------------------------
+  Step - Hop 1: Identification:
+    Reasoning: The most likely primary condition is a urinary tract infection (UTI) leading to sepsis, as evidenced by the patient's initial high temperature (102.1), elevated white count (35,000), and urine culture showing Escherichia coli. The presence of a Foley catheter and right renal angle tenderness also support this diagnosis. The treatment with doripenem and change of Foley catheter further indicate that UTI is a primary concern.
+    [Guideline check: SUPPORTED] The claim's clinical principle of identifying a patient with suspected sepsis due to a urinary tract infection (UTI) is supported by the guideline's emphasis on laboratory markers such as elevated white blood cell count (WBC), which aligns with the claim's mention of an elevated white count (35,000), a specific instantiation of the guideline's general principle.
+
+  Step - Hop 2: Diagnostic Confirmation:
+    Reasoning: To support or confirm the condition of a urinary tract infection (UTI) leading to sepsis, several diagnostic criteria can be referenced:
+
+1. **Initial high white blood cell count (35,000)**: This significantly elevated white blood cell count indicates a strong inflammatory response, which is consistent with a severe infection such as sepsis due to a UTI.
+
+2. **Decreased white blood cell count to 15.5**: The decrease in white blood cell count from 35,000 to 15.5 after initiating treatment suggests a positive response to therapy, further supporting the initial diagnosis of sepsis due to a UTI.
+
+3. **Urine culture showing Escherichia coli resistant to Levaquin**: The identification of a pathogen (Escherichia coli) in the urine culture, especially one that is resistant to a commonly used antibiotic (Levaquin), supports the diagnosis of a UTI. The resistance pattern also guides appropriate antibiotic therapy, in this case, necessitating a switch to doripenem.
+
+4. **Clinical findings such as fever (highest temperature recorded over the past 24 hours is 102.1) and right renal angle tenderness**: The presence of fever and localized tenderness in the right renal angle are indicative of an infection in the urinary tract, likely pyelonephritis, which can lead to sepsis.
+
+These findings collectively support the diagnosis of a UTI leading to sepsis, guiding the treatment approach including the use of doripenem based on the pathogen's resistance profile.
+    [Guideline check: PARTIAL] The claim's clinical principles, such as using elevated white blood cell count (e.g., 35,000) and lactate levels to support a diagnosis of sepsis, align with the guideline's emphasis on elevated white blood cell count (WBC greater than 12000) and elevated lactate as markers of sepsis, but the claim also asserts specifics about diagnosing a UTI leading to sepsis and treatment with doripenem, which are not covered by the guideline.
+
+  Step - Hop 3: Management:
+    Reasoning: The recommended initial management for the confirmed condition of a urinary tract infection (UTI) leading to sepsis, caused by Escherichia coli, includes the administration of doripenem, an antibiotic to which the pathogen is susceptible. Additionally, changing the Foley catheter is crucial to eliminate a potential source of infection and prevent further complications. Close monitoring of the patient's clinical status, including vital signs and laboratory parameters, is also essential to assess response to treatment and guide further management.
+    [Guideline check: PARTIAL] The claim's principles of administering broad-spectrum antibiotics (doripenem is a specific example) and monitoring the patient's clinical status are supported by the guideline, but the claim also asserts changing the Foley catheter, which is not mentioned in the guideline.
+
+
+
+######################################################################
+CASE 5
+######################################################################
+
+PATIENT SUMMARY:
+Septic from nephrolithiasis - Nephrolithiasis status post lithotripsy and stent placed in the left ureter, urinary incontinence, recent sepsis.
+
+--------------------------------------------------
+OUTPUT 1:
+--------------------------------------------------
+  Step - Hop 1: Identification:
+    Reasoning: The most likely primary condition is nephrolithiasis with a ureteral stent in place, given the patient's recent history of sepsis from nephrolithiasis, lithotripsy treatment, and stent placement in the left ureter. The patient's ongoing symptoms of feeling "sick-like" and not feeling very well, despite being on antibiotics, suggest a possible urinary tract issue related to the stent or residual stone fragments. The presence of a ureteral stent, which the patient was unaware of, also supports this diagnosis.
+    [Guideline check: UNSUPPORTED] The claim's core principle regarding the diagnosis of nephrolithiasis with a ureteral stent in place, and its relation to the patient's symptoms, is genuinely absent from the guideline, which focuses on the definition and diagnosis of sepsis and septic shock.
+
+  Step - Hop 2: Diagnostic Confirmation:
+    Reasoning: To confirm the primary condition of nephrolithiasis with a ureteral stent in place, the diagnostic criteria that support this condition include the patient's recent history of sepsis from nephrolithiasis, the presence of a ureteral stent in the left ureter, and the patient's ongoing symptoms. 
+
+The patient's vital signs, such as a blood pressure of 120/70, indicate that her hypertension is currently controlled. The objective findings of a soft abdomen, clear lungs, regular heart rate and rhythm, and no edema also support the management of her conditions.
+
+However, specific lab values are not provided in the case. Typically, urinalysis and urine culture would be used to confirm a urinary tract infection or sepsis, and imaging studies (e.g., ultrasound or CT scan) would be used to confirm the presence of the ureteral stent and assess for any residual stone fragments. 
+
+The clinical findings of the patient's report of feeling "sick-like" and not feeling very well, despite being on antibiotics (Levaquin), suggest a possible urinary tract issue related to the stent or residual stone fragments.
+    [Guideline check: UNSUPPORTED] The claim's core principle revolves around diagnosing and managing nephrolithiasis with a ureteral stent and possible urinary tract issues, which is not addressed in the provided sepsis guideline text that focuses on the definition and laboratory markers of sepsis.
+
+  Step - Hop 3: Management:
+    Reasoning: The recommended initial management approach for this patient would be to schedule a follow-up appointment with Dr. F, the urologist who placed the ureteral stent, to assess the stent and determine if it needs to be removed or replaced. In the meantime, the patient should continue taking her current medications, including Levaquin, to complete the antibiotic course, and her blood pressure and other conditions should be monitored. Additionally, a urinalysis and urine culture may be ordered to rule out a urinary tract infection or sepsis, and to guide further management.
+    [Guideline check: UNSUPPORTED] The claim's core principle of managing the patient by scheduling a follow-up with a urologist, continuing current medications, and monitoring blood pressure and conditions, does not match any principle in the guideline, which focuses on immediate sepsis management including fluid resuscitation, antibiotics, lactate measurement, and blood cultures.
+
+
+--------------------------------------------------
+OUTPUT 2:
+--------------------------------------------------
+**(1) Most Likely Diagnosis:**
+The patient's current clinical presentation suggests **Urinary Tract Infection (UTI) or Sepsis Recurrence** given her recent history of sepsis from nephrolithiasis, presence of a ureteral stent, and symptoms of feeling unwell.
+
+**(2) Recommended Initial Management:**
+1. **Urinalysis and Culture**: To assess for UTI or sepsis recurrence.
+2. **Medication Review and Adjustment**: Verify the patient's current medication regimen, including the antibiotic (Levaquin), and ensure she completes the prescribed course.
+3. **Schedule Follow-up with Dr. F**: Arrange for the patient to see Dr. F for stent removal and further urological evaluation.
+4. **Monitoring**: Closely monitor the patient's condition for signs of worsening infection or sepsis.
+
