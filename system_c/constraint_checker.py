@@ -38,14 +38,25 @@ class ConstraintChecker:
             "and bicarbonate replacement' is SUPPORTED because it instantiates that principle; "
             "if the guideline says to 'discontinue nephrotoxic agents,' a claim that names a "
             "specific nephrotoxic medication to stop or adjust is SUPPORTED.\n\n"
+            "This applies to specific diagnoses and sub-types too. If the claim names a "
+            "specific diagnosis or sub-type that clinically falls UNDER the general category "
+            "the guideline covers, treat the guideline's general principle as applying to it "
+            "-> SUPPORTED. For example, a specific form of acute kidney injury (such as "
+            "crescentic glomerulonephritis) is still covered by general AKI staging and "
+            "management guidelines, so the general principle applies to it. A specific lab "
+            "value, drug, or sub-diagnosis that is a valid instance of the guideline's general "
+            "category counts as SUPPORTED, not UNSUPPORTED.\n\n"
             "Use the three verdicts as follows:\n"
             "- SUPPORTED: the claim's clinical principle matches a principle in the guideline, "
-            "even if expressed with different words or instantiated with specific examples.\n"
-            "- PARTIAL: the claim is partly aligned with the guideline, but it ALSO asserts "
-            "something the guideline contradicts or does not cover.\n"
-            "- UNSUPPORTED: the claim's core condition or principle is genuinely absent from "
-            "the guideline (for example, a drug-overdose claim checked against sepsis, "
-            "pneumonia, or AKI guidelines).\n\n"
+            "even if expressed with different words, instantiated with specific examples, or "
+            "naming a specific sub-type that falls under the guideline's general category.\n"
+            "- PARTIAL: the claim is mostly aligned with the guideline, but it ALSO adds a "
+            "specific assertion that the guideline neither supports nor contradicts.\n"
+            "- UNSUPPORTED: use this ONLY when the claim's core condition is genuinely a "
+            "DIFFERENT disease category that the guideline does not cover at all (for example, "
+            "a cardiac arrhythmia or a drug overdose checked against an AKI or sepsis "
+            "guideline). A specific sub-type of the guideline's own condition is NOT "
+            "UNSUPPORTED.\n\n"
             "Do not penalize a claim merely for being more specific than the guideline."
         )
 
@@ -57,10 +68,12 @@ CLINICAL CLAIM TO VERIFY:
 
 When deciding, ask: does the claim's clinical PRINCIPLE match a principle in the
 guideline above? Specific drug names, doses, or exact lab values are valid concrete
-examples of a general guideline principle -- if the guideline endorses the category,
-a specific example within it is SUPPORTED. Use PARTIAL only when the claim is partly
-aligned but also asserts something the guideline contradicts or does not cover. Use
-UNSUPPORTED only when the claim's core principle is genuinely absent from the guideline.
+examples of a general guideline principle, and a specific diagnosis or sub-type that
+falls UNDER the guideline's general category is covered by that category -- in all these
+cases the verdict is SUPPORTED. Use PARTIAL when the claim is mostly aligned but adds a
+specific assertion the guideline neither supports nor contradicts. Use UNSUPPORTED ONLY
+when the claim's core condition is a genuinely DIFFERENT disease category not covered by
+the guideline at all (e.g. a cardiac arrhythmia or drug overdose vs. an AKI/sepsis guideline).
 
 Respond in EXACTLY this format:
 VERDICT: [SUPPORTED / PARTIAL / UNSUPPORTED]

@@ -6,6 +6,7 @@ each hop's verdict + reason into error categories.
 """
 import sys
 import csv
+import time
 sys.path.append("E:/Oishee/Thesis/system_c")
 
 from system_c import SystemC
@@ -85,6 +86,9 @@ if __name__ == "__main__":
                 "verdict": verdict,
                 "category": cat,
             })
+
+        # Pause between cases to stay under Groq's tokens-per-minute rate limit
+        time.sleep(15)
 
     # Save CSV
     with open("E:/Oishee/Thesis/results_e5.csv", "w", newline="", encoding="utf-8") as f:

@@ -46,7 +46,7 @@ class MultiHopReasoner:
     def reason(self, case_text):
         """Run the full 3-hop reasoning chain with verification."""
         trace = []
-        accumulated = f"PATIENT CASE:\n{case_text[:2000]}\n\n"  # truncate long notes
+        accumulated = f"PATIENT CASE:\n{case_text[:1200]}\n\n"  # truncate long notes
 
         for hop in self.hops:
             # 1. Generate the hop reasoning

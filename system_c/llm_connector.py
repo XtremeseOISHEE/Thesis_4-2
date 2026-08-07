@@ -7,7 +7,8 @@ from groq import Groq
 
 class LLMConnector:
     def __init__(self, key_path="E:/Oishee/Thesis/groq_key.txt",
-                 model="meta-llama/llama-4-scout-17b-16e-instruct"):
+        
+                 model="openai/gpt-oss-120b"):
         with open(key_path, "r") as f:
             api_key = f.read().strip()
         self.client = Groq(api_key=api_key)
@@ -24,6 +25,7 @@ class LLMConnector:
             model=self.model,
             messages=messages,
             temperature=temperature,
+            max_tokens=800,
         )
         return response.choices[0].message.content
 

@@ -56,7 +56,7 @@ class SystemB:
     def analyze_case(self, case):
         case_text = case["transcription"] if case["transcription"] else case["full_text"]
         trace = []
-        accumulated = f"PATIENT CASE:\n{case_text[:2000]}\n\n"
+        accumulated = f"PATIENT CASE:\n{case_text[:1200]}\n\n"
 
         for hop in self.hops:
             # Retrieve guideline to ENRICH the prompt (but no verification after)
