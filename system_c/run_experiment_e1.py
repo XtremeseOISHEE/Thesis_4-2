@@ -6,6 +6,8 @@ selected cases and saves results to CSV for analysis.
 import sys
 import csv
 import time
+import glob
+import os
 sys.path.append("E:/Oishee/Thesis/system_c")
 
 from system_a import SystemA
@@ -13,9 +15,24 @@ from system_b import SystemB
 from system_c import SystemC
 
 
+# In-scope cases live in cases_v2/, out-of-scope negative controls in cases_oos/.
+IN_SCOPE_DIR = "E:/Oishee/Thesis/cases_v2"
+OUT_OF_SCOPE_DIR = "E:/Oishee/Thesis/cases_oos"
+
+# Smoke-test limit: set to a small int (e.g. 3) to run only the first N cases.
+# Set to None or 0 to run ALL cases.
+LIMIT = None
+
+
 def load_case_list():
-    with open("E:/Oishee/Thesis/experiment_cases.txt", "r", encoding="utf-8") as f:
-        return [line.strip() for line in f if line.strip()]
+    """Scan both case folders and return (path, scope) tuples. The in_scope /
+    out_of_scope label is determined solely by WHICH FOLDER the case is in --
+    NOT by re-running condition detection (detection is what E1 evaluates)."""
+    in_scope = sorted(glob.glob(os.path.join(IN_SCOPE_DIR, "*.txt")))
+    out_of_scope = sorted(glob.glob(os.path.join(OUT_OF_SCOPE_DIR, "*.txt")))
+    cases = [(p, "in_scope") for p in in_scope]
+    cases += [(p, "out_of_scope") for p in out_of_scope]
+    return cases
 
 
 def count_words(text):
@@ -33,14 +50,22 @@ if __name__ == "__main__":
     sys_c = SystemC()
 
     case_paths = load_case_list()
+    if LIMIT:
+        case_paths = case_paths[:LIMIT]
+        print(f"\n*** SMOKE TEST: LIMIT={LIMIT} -- running only the first {LIMIT} cases ***")
     print(f"\nRunning on {len(case_paths)} cases...\n")
 
     rows = []
 
-    for idx, path in enumerate(case_paths, 1):
+    for idx, (path, scope) in enumerate(case_paths, 1):
         case = sys_a.loader.load_case(path)
         fname = case["filename"]
-        print(f"[{idx}/{len(case_paths)}] {fname}")
+        print(f"[{idx}/{len(case_paths)}] [{scope}] {fname}")
+
+        # Deterministic condition routing actually used by the pipeline (no API).
+        # Recorded per case so the stratified summary reflects the real run.
+        c_text = case["transcription"] if case["transcription"] else case["full_text"]
+        detected = sys_c.reasoner._guess_condition(case.get("description", ""), c_text)
 
         # --- System A ---
         try:
@@ -75,6 +100,7 @@ if __name__ == "__main__":
 
         rows.append({
             "case": fname,
+            "detected_condition": detected,
             "labeled_condition": case["condition"],
             "A_output_words": a_words,
             "B_hops": b_hops,

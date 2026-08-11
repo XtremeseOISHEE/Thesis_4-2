@@ -32,19 +32,63 @@ class MultiHopReasoner:
             },
         ]
 
-    def _guess_condition(self, text):
-        """Simple keyword-based condition hint for guideline filtering."""
-        text_low = text.lower()
-        if "sepsis" in text_low or "septic" in text_low:
-            return "sepsis"
-        if "pneumonia" in text_low or "consolidation" in text_low:
-            return "pneumonia"
-        if "kidney" in text_low or "creatinine" in text_low or "renal" in text_low or "aki" in text_low:
-            return "aki"
-        return None
+    def _guess_condition(self, description, transcription):
+        """Deterministic keyword-based condition hint for guideline filtering.
 
-    def reason(self, case_text):
-        """Run the full 3-hop reasoning chain with verification."""
+        Scores each condition by WEIGHTED keyword hits, weighting the case
+        DESCRIPTION (chief complaint / current primary problem) more heavily than
+        the full TRANSCRIPTION, whose past-medical-history and incidental labs
+        otherwise dilute the current problem. Ties are broken by the priority
+        order of keyword_sets below (heart_failure, atrial_fib, cad_mi, sepsis,
+        pneumonia, aki). Returns None if no keyword matches anywhere (score 0),
+        so out-of-scope cases retrieve unfiltered. If description is empty/missing
+        its term contributes 0 and scoring falls back to transcription only.
+
+        NOTE: An LLM-based classifier (temperature=0) was tested for this step
+        and REJECTED: on the MoE model (GPT-OSS-120B via OpenRouter) it returned
+        different labels for the same input across runs even at temperature=0,
+        breaking reproducibility. This deterministic keyword detector is used
+        instead; its main known limitation is physiologically coupled conditions
+        (esp. sepsis<->AKI), which is reported and analyzed rather than hidden.
+        """
+        desc_low = (description or "").lower()
+        trans_low = (transcription or "").lower()
+
+        # Ordered by tie-break priority: earlier entries win an equal score.
+        keyword_sets = {
+            "heart_failure": ["heart failure", "chf", "congestive heart", "cardiomyopathy",
+                              "ejection fraction", "bnp", "orthopnea", "diuretic", "lasix",
+                              "carvedilol"],
+            "atrial_fib": ["atrial fibrillation", "afib", "a-fib", "atrial flutter",
+                           "cardioversion", "warfarin", "coumadin", "anticoagulation",
+                           "diltiazem"],
+            "cad_mi": ["myocardial infarction", "coronary artery disease", "acute coronary",
+                       "angina", "troponin", "st elevation", "stent", "coronary angiography"],
+            "sepsis": ["sepsis", "septic"],
+            "pneumonia": ["pneumonia", "consolidation"],
+            "aki": ["kidney", "creatinine", "renal", "aki"],
+        }
+
+        # DESCRIPTION dominates; TRANSCRIPTION is a low-weight fallback signal.
+        W_DESC, W_TRANS = 3, 1
+        scores = {
+            cond: W_DESC * sum(kw in desc_low for kw in kws)
+                  + W_TRANS * sum(kw in trans_low for kw in kws)
+            for cond, kws in keyword_sets.items()
+        }
+
+        # max() returns the FIRST key with the highest score, and dict iteration
+        # preserves insertion order -> ties resolve to the priority order above.
+        best = max(scores, key=lambda cond: scores[cond])
+        return best if scores[best] > 0 else None
+
+    def reason(self, case_text, condition=None):
+        """Run the full 3-hop reasoning chain with verification.
+
+        `condition` is the guideline-filter hint detected upstream (in
+        SystemC.analyze_case) from the case description + transcription. When
+        None, retrieval runs unfiltered (out-of-scope fallback).
+        """
         trace = []
         accumulated = f"PATIENT CASE:\n{case_text[:1200]}\n\n"  # truncate long notes
 
@@ -56,8 +100,7 @@ class MultiHopReasoner:
             hop_output = self.llm.ask(prompt, system_prompt=system_prompt)
 
             # 2. Verify this hop against guidelines
-            condition_hint = self._guess_condition(hop_output)
-            check = self.checker.check_hop(hop_output, condition=condition_hint)
+            check = self.checker.check_hop(hop_output, condition=condition)
 
             # 3. Record the trace
             trace.append({
@@ -96,7 +139,7 @@ if __name__ == "__main__":
     )
 
     print("Running 3-hop reasoning on test case...\n")
-    trace = reasoner.reason(test_case)
+    trace = reasoner.reason(test_case, condition=reasoner._guess_condition("", test_case))
 
     for step in trace:
         print("=" * 65)

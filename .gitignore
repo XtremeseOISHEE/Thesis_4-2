@@ -3,3 +3,4 @@ research/
 groq_key.txt
 chroma_db/
 __pycache__/
+openrouter_key.txt

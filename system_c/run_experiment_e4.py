@@ -11,8 +11,8 @@ from system_a import SystemA
 from system_b import SystemB
 from system_c import SystemC
 
-# The showcase case (scored 3/0/0 = all SUPPORTED in E1)
-SHOWCASE = "E:/Oishee/Thesis/cases/case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt"
+# The showcase case (CAD_MI, scored 3/0/0 = all SUPPORTED in E1)
+SHOWCASE = "E:/Oishee/Thesis/cases_v2/case_4915_CAD_MI__Cardiovascular___Pulmonary.txt"
 
 
 def section(title):

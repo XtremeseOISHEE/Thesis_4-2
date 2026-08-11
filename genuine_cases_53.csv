@@ -1,0 +1,54 @@
+condition,row_index,specialty,sample_name,description
+sepsis,4481,Consult - History and Phy.,Consult - Sepsis,"Sepsis, possible SBP.  A 53-year-old Hispanic man with diabetes, morbid obesity, hepatitis C, cirrhosis, history of alcohol and cocaine abuse presented in the e"
+sepsis,3007,Nephrology,Indwelling Catheter Insertion,Insertion of left femoral circle-C catheter (indwelling catheter).  Chronic renal failure.  The patient was discovered to have a MRSA bacteremia with elevated f
+sepsis,4345,Consult - History and Phy.,H&P - Infant with fever,"Irritable baby, 6-week-old, with fever for approximately 24 hours."
+sepsis,4260,Consult - History and Phy.,Neurogenic Bladder - Consult,"Neurogenic bladder, in a patient catheterizing himself 3 times a day, changing his catheter 3 times a week"
+aki,4135,Consult - History and Phy.,Renal Failure Evaluation,"Renal failure evaluation for possible dialysis therapy.  Acute kidney injury of which etiology is unknown at this time, with progressive azotemia unresponsive t"
+aki,4359,Consult - History and Phy.,Gen Med Consult - 53,"The patient is a 61-year-old lady who was found down at home and was admitted for respiratory failure, septic shock, acute renal failure as well as metabolic ac"
+aki,4335,Consult - History and Phy.,Hematology Consult,"Leukocytosis, acute deep venous thrombosis, right lower extremity with bilateral pulmonary embolism, on intravenous heparin complicated with acute renal failure"
+aki,4270,Consult - History and Phy.,Nephrology Consultation - 2,"Patient with a diagnosis of pancreatitis, developed hypotension and possible sepsis and respiratory, as well as renal failure."
+aki,4141,Consult - History and Phy.,Renal Failure - Consult,"Acute renal failure, suspected, likely due to multi-organ system failure syndrome."
+aki,4817,Cardiovascular / Pulmonary,Elevated Cardiac Enzymes,"Abnormal cardiac enzyme profile.  The patient is a 66-year-old gentleman, was brought into emergency room with obtundation.  The patient was mechanically ventil"
+pneumonia,4369,Consult - History and Phy.,Gen Med Consult - 46,Pneumonia in the face of fairly severe Crohn disease with protein-losing enteropathy and severe malnutrition with anasarca.  He also has anemia and leukocytosis
+pneumonia,4831,Cardiovascular / Pulmonary,Discharge Summary - Respiratory Distress,A 3-year-old abrupt onset of cough and increased work of breathing.
+pneumonia,4812,Cardiovascular / Pulmonary,Elevated BNP - Consult,"Elevated BNP.  Diastolic heart failure, not contributing to his present problem. Chest x-ray and CAT scan shows possible pneumonia.  The patient denies any prio"
+pneumonia,3955,Discharge Summary,Discharge Summary - 17,"The patient underwent a scalp skin biopsy with pathology specimen obtained.   At the time of discharge, the patient had improved."
+heart_failure,4859,Cardiovascular / Pulmonary,Consult - Congestive Heart Failure,"Congestive heart failure (CHF).  The patient is a 75-year-old gentleman presented through the emergency room.  Symptoms are of shortness of breath, fatigue, and"
+heart_failure,4762,Cardiovascular / Pulmonary,Hypertension & Cardiomyopathy,"Nonischemic cardiomyopathy, branch vessel coronary artery disease, congestive heart failure - NYHA Class III, history of nonsustained ventricular tachycardia, h"
+heart_failure,4894,Cardiovascular / Pulmonary,Cardiology Progress Note - 1,Congestive heart failure due to rapid atrial fibrillation and systolic dysfunction.
+heart_failure,4835,Cardiovascular / Pulmonary,Dilated Cardiomyopathy - Consult,A 63-year-old man with a dilated cardiomyopathy presents with a chief complaint of heart failure.  He has noted shortness of breath with exertion and occasional
+heart_failure,3977,Discharge Summary,CHF & Pleural Effusion - Discharge Summary,Congestive heart failure (CHF) with left pleural effusion.  Anemia of chronic disease.
+heart_failure,4377,Consult - History and Phy.,Gen Med Consult - 42,"Patient with one-week history of increased progressive shortness of breath, orthopnea for the past few nights, mild increase in peripheral edema, and active whe"
+heart_failure,4976,Cardiovascular / Pulmonary,Abnormal Echocardiogram,"Abnormal echocardiogram findings and followup.  Shortness of breath, congestive heart failure, and valvular insufficiency.   The patient complains of shortness "
+heart_failure,3105,Hospice - Palliative Care,Hospice Visit - CHF,Initial visit for a 95-year-old gentleman with a Hospice diagnosis of CHF.
+heart_failure,4857,Cardiovascular / Pulmonary,Consult - Atrial Fibrillation - 1,"Atrial fibrillation and shortness of breath.  The patient is an 81-year-old gentleman with shortness of breath, progressively worsening, of recent onset. Histor"
+heart_failure,3949,Discharge Summary,Discharge Summary - 9,"A woman presented to the ER with complaints of nausea, vomiting, and epigastric discomfort, ongoing for about 4 to 5 months."
+heart_failure,4394,Consult - History and Phy.,Gen Med Consult - 25,Patient with a past medical history of atrial fibrillation and arthritis complaining of progressively worsening shortness of breath.
+heart_failure,4867,Cardiovascular / Pulmonary,Chronic Atrial Fibrillation,A routine return appointment for a 71-year-old woman with chronic atrial fibrillation.  Chief complaint today is shortness of breath.
+atrial_fib,4908,Cardiovascular / Pulmonary,Cardiac Consult & Cardioversion,"Patient with a history of atrial fibrillation in the past, more recently who has had atrial flutter.  The patient has noted some lightheadedness as well as ches"
+atrial_fib,4957,Cardiovascular / Pulmonary,Atrial Fibrillation Management,"The patient is a very pleasant 62-year-old African American female with a history of hypertension, hypercholesterolemia, and CVA, referred for evaluation and ma"
+atrial_fib,4858,Cardiovascular / Pulmonary,Consult - Atrial Fibrillation,Patient with past medical history significant for coronary artery disease status post bypass grafting surgery and history of a stroke with residual left sided h
+atrial_fib,4903,Cardiovascular / Pulmonary,Cardiac Consultation - 3,"Patient with atrial fibrillation with slow ventricular response, partially due to medications."
+atrial_fib,4965,Cardiovascular / Pulmonary,Atrial Fibrillation - Consult,A 74-year-old woman for Cardiology consultation regarding atrial fibrillation and anticoagulation after a fall.  The patient denies any chest pain nor clear sho
+atrial_fib,4887,Cardiovascular / Pulmonary,Cardioversion - Direct Current - 1,Direct-current cardioversion.  This is a 53-year-old gentleman with history of paroxysmal atrial fibrillation for 3 years.  Successful DC cardioversion of atria
+atrial_fib,4891,Cardiovascular / Pulmonary,Cardioversion - Unsuccessful,Cardioversion.  Unsuccessful direct current cardioversion with permanent atrial fibrillation.
+atrial_fib,4956,Cardiovascular / Pulmonary,Atrial Flutter - Progress Note,A critically ill 67-year-old with multiple medical problems probably still showing signs of volume depletion with hypotension and atrial flutter with difficult 
+atrial_fib,4895,Cardiovascular / Pulmonary,Cardioversion,Cardioversion.  An 86-year-old woman with a history of aortic valve replacement in the past with paroxysmal atrial fibrillation
+atrial_fib,4888,Cardiovascular / Pulmonary,Cardioversion - Direct Current,Direct current cardioversion.  Successful direct current cardioversion with restoration of sinus rhythm from atrial fibrillation with no immediate complication.
+atrial_fib,4629,Cardiovascular / Pulmonary,Transesophageal Echocardiogram,Transesophageal echocardiogram and direct current cardioversion.
+atrial_fib,4901,Cardiovascular / Pulmonary,Cardiology Office Visit - 1,Sample cardiology office visit note.
+atrial_fib,3299,General Medicine,Gen Med SOAP - 4,General Medicine SOAP note.
+cad_mi,4720,Cardiovascular / Pulmonary,Non-Q-wave Myocardial Infarction,A patient with non-Q-wave myocardial infarction.  No definite chest pains.  The patient is breathing okay.  The patient denies orthopnea or PND.
+cad_mi,4366,Consult - History and Phy.,Gen Med Consult - 54,"The patient is a 35-year-old lady who was admitted with chief complaints of chest pain, left-sided with severe chest tightness after having an emotional argumen"
+cad_mi,4923,Cardiovascular / Pulmonary,Cardiac Catheterization - 1,"Cardiac Catheterization - An obese female with a family history of coronary disease and history of chest radiation for Hodgkin disease, presents with an acute m"
+cad_mi,4915,Cardiovascular / Pulmonary,Cardiac Catheterization - 4,Percutaneous intervention with drug-eluting stent placement to the ostium of the PDA.
+cad_mi,4871,Cardiovascular / Pulmonary,Chest Pain & Respiratory Insufficiency,A lady was admitted to the hospital with chest pain and respiratory insufficiency.  She has chronic lung disease with bronchospastic angina.
+cad_mi,4898,Cardiovascular / Pulmonary,Cardiac Transfer Summary,"Need for cardiac catheterization.  Coronary artery disease, chest pain, history of diabetes, history of hypertension, history of obesity,  a 1.1 cm lesion in th"
+cad_mi,4502,Consult - History and Phy.,Consult - Chest Pain - 1,"A 37-year-old admitted through emergency, presented with symptoms of chest pain, described as a pressure-type dull ache and discomfort in the precordial region."
+cad_mi,4927,Cardiovascular / Pulmonary,CAD - 6-Month Followup,"He is a 67-year-old man who suffers from chronic anxiety and coronary artery disease and DJD.  He has been having some chest pains, but overall he does not soun"
+cad_mi,4910,Cardiovascular / Pulmonary,Cardiac Catheterization - 9,Cardiac catheterization and coronary intervention report.
+cad_mi,4776,Cardiovascular / Pulmonary,"Heart Catheterization, Ventriculography, & Angiography - 12","Left heart catheterization, left ventriculography, selective coronary angiography, and right femoral artery approach."
+cad_mi,4925,Cardiovascular / Pulmonary,Cardiac Catheterization - 3,"White male with onset of chest pain, with history of on and off chest discomfort over the past several days."
+cad_mi,4723,Cardiovascular / Pulmonary,Myocardial Perfusion Imaging - 2,Myocardial perfusion imaging - patient had previous abnormal stress test.  Stress test with imaging for further classification of CAD and ischemia.
+cad_mi,4378,Consult - History and Phy.,Gen Med Consult - 4,Consultation for jaw pain.
+cad_mi,4809,Cardiovascular / Pulmonary,ER Report - Chest Pain,Patient complains of chest pain - possible esophageal reflux

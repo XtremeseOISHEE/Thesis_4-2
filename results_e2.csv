@@ -7,3 +7,15 @@ aki,correct,SUPPORTED,True
 aki,incorrect,UNSUPPORTED,True
 aki,correct,SUPPORTED,True
 aki,incorrect,UNSUPPORTED,True
+heart_failure,correct,SUPPORTED,True
+heart_failure,incorrect,UNSUPPORTED,True
+heart_failure,correct,SUPPORTED,True
+heart_failure,incorrect,UNSUPPORTED,True
+atrial_fib,correct,SUPPORTED,True
+atrial_fib,incorrect,UNSUPPORTED,True
+atrial_fib,correct,SUPPORTED,True
+atrial_fib,incorrect,UNSUPPORTED,True
+cad_mi,correct,SUPPORTED,True
+cad_mi,incorrect,UNSUPPORTED,True
+cad_mi,correct,SUPPORTED,True
+cad_mi,incorrect,UNSUPPORTED,True

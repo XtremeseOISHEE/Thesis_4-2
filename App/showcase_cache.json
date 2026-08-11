@@ -1,0 +1,218 @@
+{
+  "Acute Kidney Injury \u2014 case 4135": {
+    "detected_condition": "aki",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "**Most likely primary condition:** Acute tubular necrosis (ATN) causing an intrinsic acute kidney injury.  \n\n**Reasoning:** The patient presents with rapid-onset oliguria, marked azotemia (BUN\u202f\u2248\u202f109\u202fmg/dL, markedly elevated creatinine), and generalized edema, all of which are classic for an intrinsic renal failure. His recent heavy weight\u2011lifting, daily creatine supplementation, and limited fluid intake create a setting of muscle breakdown and relative volume depletion that can precipitate rhabdomyolysis\u2011related ATN\u2014even though the CPK is only modestly elevated, early ATN can occur before CPK peaks. The lack of response to IV fluids further supports an intrinsic tubular injury rather than a purely pre\u2011renal process.",
+        "verdict": "SUPPORTED",
+        "why": "The claim identifies ATN as an intrinsic cause of AKI, which aligns with the guideline\u2019s categorization of intrinsic renal etiologies including acute tubular necrosis.",
+        "guidelines": [
+          "aki/diagnosis",
+          "aki/causes"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "**Diagnostic criteria that point toward acute tubular necrosis (intrinsic AKI)**  \n\n| Parameter | Expected ATN pattern | Patient\u2019s data (or what we need to obtain) |\n|-----------|----------------------|--------------------------------------------|\n| **BUN\u202f:\u202fCreatinine ratio** |\u202f<\u202f15\u202f:\u202f1 (often 10\u201115\u202f:\u202f1) because both BUN and Cr rise in parallel. | Admission BUN\u202f=\u202f109\u202fmg/dL; the creatinine on admission is not listed but, given the degree of azotemia, the ratio is likely \u2264\u202f15\u202f:\u202f1, which favors an intrinsic process rather than a pre\u2011renal state (where the ratio is >\u202f20\u202f:\u202f1). |\n| **Urine output** | Oliguria <\u202f400\u202fmL/24\u202fh (or <\u202f0.5\u202fmL/kg/h). | The patient was essentially anuric until a Foley yielded ~500\u202fmL, confirming oliguria. |\n| **Fractional excretion of sodium (FeNa)** |\u202f>\u202f2\u202f% (often 2\u20115\u202f%) because damaged tubules cannot re\u2011absorb sodium efficiently. | Not yet measured; a spot urine Na and urine creatinine should be obtained to calculate FeNa. A value >\u202f2\u202f% would support ATN. |\n| **Urine osmolality** |\u202f\u2248\u202f300\u2011350\u202fmOsm/kg (isosthenuria) \u2013 the kidney cannot concentrate urine. | Not yet measured; a urine osm <\u202f350\u202fmOsm/kg would be consistent with ATN. |\n| **Urine sediment** | Muddy\u2011brown granular (cast) cells, epithelial cell casts, occasional pigmented (myoglobin) casts if rhabdomyolysis\u2011related. | A fresh urine sample should be examined microscopically; the presence of granular casts would be a hallmark of ATN. |\n| **Serum CPK** | Rhabdomyolysis\u2011related ATN often follows CPK >\u202f5\u202f000\u202fU/L, but ATN can develop with modest elevations if there is concurrent volume depletion or nephrotoxic exposure. | CPK\u202f=\u202f234\u202fU/L (only mildly elevated). The modest rise does not exclude ATN; the key is the rapid rise in BUN/Cr and oliguria despite fluid resuscitation. |\n\n**Bottom line:** The combination of a very high BUN (109\u202fmg/dL) with a likely proportionate rise in creatinine (BUN/Cr\u202f\u2248\u202f10\u201115\u202f:\u202f1), oliguria, and lack of response to IV fluids fulfills the classic laboratory pattern for intrinsic AKI, most commonly ATN. Confirmation will come from a urine study showing FeNa\u202f>\u202f2\u202f%, low urine osmolality, and granular casts.",
+        "verdict": "PARTIAL",
+        "why": "The guideline endorses using FeNa\u202f>\u202f2% and urine sediment analysis (casts) to identify intrinsic AKI, but it does not address BUN/Cr ratio thresholds or urine osmolality, which the claim adds as diagnostic criteria.",
+        "guidelines": [
+          "aki/labs",
+          "aki/staging"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "**Initial management:**\u202fBegin meticulous volume\u2011status assessment and, if the patient is not already volume\u2011overloaded, give a modest isotonic\u2011fluid challenge (e.g., 1\u202fL normal saline over 6\u202fh) while watching for improvement in urine output; simultaneously discontinue all nephrotoxins (NSAIDs, contrast, high\u2011dose creatine) and start a strict input\u2011output and daily\u2011weight chart, serum electrolytes, BUN/Cr, and urine\u2011sediment monitoring. If the patient develops any emergent dialysis indication\u2014persistent oliguria\u202f>\u202f24\u202fh with worsening azotemia, refractory hyper\u2011K\u207a\u202f>\u202f6.5\u202fmmol/L, severe metabolic acidosis (pH\u202f<\u202f7.1), pulmonary edema, or uremic symptoms (pericarditis, encephalopathy, nausea/vomiting)\u2014initiate renal replacement therapy (continuous veno\u2011venous hemofiltration or intermittent hemodialysis) without delay.",
+        "verdict": "SUPPORTED",
+        "why": "The claim follows the guideline\u2019s principles of assessing and optimizing volume status, discontinuing nephrotoxic agents, monitoring electrolytes and renal function, and initiating renal replacement therapy for refractory hyperkalemia, severe acidosis, fluid overload, or uremia.",
+        "guidelines": [
+          "aki/staging",
+          "aki/treatment"
+        ]
+      }
+    ],
+    "conclusion": "Acute tubular necrosis\u2013type intrinsic acute kidney injury (most likely rhabdomyolysis\u2011related) is present, and the immediate priority is to initiate renal replacement therapy (dialysis) without delay while discontinuing nephrotoxins and confirming adequate volume status."
+  },
+  "Coronary Artery Disease / MI \u2014 case 4915": {
+    "detected_condition": "cad_mi",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "The most likely primary condition is an **acute non\u2011ST\u2011segment elevation myocardial infarction (NSTEMI) secondary to coronary artery disease**. The patient has a known history of CAD, presents with a COPD exacerbation that can mask cardiac symptoms, and has mildly elevated cardiac enzymes consistent with myocardial injury without ST\u2011segment elevation on the ECG, prompting urgent cardiac catheterization and PCI of the right posterior descending artery. The need for drug\u2011eluting stent placement confirms that an acute coronary syndrome (NSTEMI) was the driving pathology.",
+        "verdict": "SUPPORTED",
+        "why": "The claim identifies an NSTEMI based on troponin elevation without ST\u2011segment changes and recommends urgent catheterization and PCI, which aligns with the guideline\u2019s definition of ACS (including NSTEMI) and its management approach.",
+        "guidelines": [
+          "cad_mi/diagnosis",
+          "cad_mi/chronic_cad"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "The universal definition of an NSTEMI requires (1) a rise and/or fall in cardiac\u2011troponin values above the 99th\u2011percentile upper reference limit (e.g., a troponin\u2011I of\u202f0.10\u202fng/mL when the laboratory cutoff is\u202f0.04\u202fng/mL) and (2) evidence of myocardial ischemia such as typical chest discomfort, new ischemic ECG changes (ST\u2011segment depression\u202f\u2265\u202f0.5\u202fmm or T\u2011wave inversion in \u2265\u202f2 contiguous leads), or imaging evidence of new loss of viable myocardium. In this patient the \u201cmildly positive\u201d cardiac enzymes (troponin values exceeding the assay\u2019s 99th percentile) together with his known CAD, the clinical picture of an acute coronary syndrome during a COPD exacerbation, and the angiographic finding of a critical lesion in the right posterior\u2011descending artery that required drug\u2011eluting stent placement satisfy those diagnostic criteria for NSTEMI.",
+        "verdict": "SUPPORTED",
+        "why": "The claim correctly restates the guideline\u2019s universal definition of NSTEMI, requiring a troponin rise/fall above the 99th percentile plus evidence of ischemia (symptoms, ECG changes, or imaging).",
+        "guidelines": [
+          "cad_mi/diagnosis",
+          "cad_mi/labs"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "For an NSTEMI the guideline\u2011directed initial therapy is a **\u201cfast\u2011track\u201d antithrombotic regimen combined with early invasive evaluation**: give aspirin 162\u2013325\u202fmg chewed immediately, add a P2Y12 inhibitor (e.g., ticagrelor 180\u202fmg loading or clopidogrel 600\u202fmg) and an unfractionated heparin (or weight\u2011based LMWH) while arranging urgent cardiac catheterization, preferably within 12\u202fh. Concurrently start a high\u2011intensity statin (atorvastatin 80\u202fmg), a beta\u2011blocker if no contraindication, and give supplemental oxygen, nitrates, and analgesia as needed to control pain and myocardial oxygen demand. This regimen stabilizes the plaque, limits thrombus propagation, and prepares the patient for definitive PCI with drug\u2011eluting stent placement.",
+        "verdict": "PARTIAL",
+        "why": "The claim matches the guideline\u2019s principles of aspirin, P2Y12 inhibitor, anticoagulation, early invasive strategy, high\u2011intensity statin and beta\u2011blocker for NSTEMI, but adds routine supplemental oxygen, which the guideline neither endorses nor opposes.",
+        "guidelines": [
+          "cad_mi/treatment",
+          "cad_mi/diagnosis"
+        ]
+      }
+    ],
+    "conclusion": "Acute non\u2011ST\u2011segment elevation myocardial infarction (NSTEMI) due to coronary artery disease, with the primary recommendation to start guideline\u2011directed dual antiplatelet therapy (chewed aspirin plus a P2Y12 inhibitor) and anticoagulation immediately and proceed to early invasive coronary angiography with PCI of the culprit lesion."
+  },
+  "Atrial Fibrillation \u2014 case 4908": {
+    "detected_condition": "atrial_fib",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "**Most likely primary condition:** Recurrent atrial flutter (a supraventricular tachyarrhythmia).\n\n**Reasoning:** The patient\u2019s 12\u2011lead ECG shows a typical atrial flutter pattern, and he experiences light\u2011headedness, chest discomfort, and dyspnea that coincide with the flutter episodes. His history of multiple cardioversions, ongoing anti\u2011arrhythmic therapy (flecainide, atenolol) and anticoagulation further support that the symptomatic, hemodynamically relevant arrhythmia driving his presentation is atrial flutter.",
+        "verdict": "SUPPORTED",
+        "why": "The claim identifies a supraventricular tachyarrhythmia (atrial flutter) diagnosed by ECG, which falls within the atrial fibrillation guideline family that also covers atrial flutter.",
+        "guidelines": [
+          "atrial_fib/diagnosis",
+          "atrial_fib/labs"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "The diagnosis of **typical (type\u202fI) atrial flutter** is confirmed by the ECG and the accompanying hemodynamic data:\n\n* **12\u2011lead ECG** \u2013 shows the classic \u201csaw\u2011tooth\u201d flutter waves at an atrial rate of **\u2248\u202f300\u202fbeats/min** with a regular **2:1 atrioventricular conduction** producing a ventricular rate of **\u2248\u202f150\u202fbeats/min** in leads\u202fII,\u202fIII, aVF and V1.  \n* **Vital signs** \u2013 the patient is mildly hypotensive (**BP\u202f100/60\u202fmmHg**) with a rapid pulse that matches the ventricular response (**150\u202fbeats/min**), explaining his light\u2011headedness, chest discomfort and dyspnea.  \n* **Laboratory** \u2013 his INR is **2.6** (therapeutic range 2.0\u20133.0 for Coumadin), confirming adequate anticoagulation while the rhythm disturbance persists.\n\nThese specific ECG characteristics together with the corresponding ventricular rate, symptomatic hypotension, and therapeutic INR satisfy the diagnostic criteria for recurrent typical atrial flutter.",
+        "verdict": "UNSUPPORTED",
+        "why": "The guideline provides ECG diagnostic criteria for atrial fibrillation only and does not address the ECG features or diagnostic principles for typical atrial flutter",
+        "guidelines": [
+          "atrial_fib/diagnosis",
+          "atrial_fib/labs"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "**Initial management:** Because the patient is symptomatic with a rapid ventricular response (\u2248150\u202fbpm) and mild hypotension, the first step is **urgent synchronized electrical cardioversion** to restore sinus rhythm. After rhythm conversion, continue **rate\u2011control (e.g., \u03b2\u2011blocker or non\u2011DHP calcium\u2011channel blocker)** and maintain therapeutic anticoagulation (INR\u202f2\u20113); if recurrent flutter persists, refer for **catheter ablation of the cavotricuspid isthmus** as definitive therapy.",
+        "verdict": "PARTIAL",
+        "why": "The claim follows guideline principles of urgent electrical cardioversion, subsequent rate\u2011control with \u03b2\u2011blocker or non\u2011DHP calcium\u2011channel blocker, and use of catheter ablation, but it specifies maintaining INR\u202f2\u20113 (warfarin) for anticoagulation, which the guideline reserves for valvular AFib and prefers DOACs",
+        "guidelines": [
+          "atrial_fib/treatment",
+          "atrial_fib/diagnosis"
+        ]
+      }
+    ],
+    "conclusion": "The patient has recurrent typical (type\u202fI) atrial flutter with a rapid ventricular response, and the immediate priority is urgent synchronized electrical cardioversion to restore sinus rhythm."
+  },
+  "Heart Failure \u2014 case 4859": {
+    "detected_condition": "heart_failure",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "The most likely primary condition is decompensated congestive heart failure, most probably with a right\u2011sided predominance. The markedly elevated BNP, acute dyspnea, fatigue, and right\u2011sided/abdominal pain (suggestive of systemic venous congestion) together with his long\u2011standing hypertension, smoking, and hypercholesterolemia point to heart failure as the underlying driver, while the incidentally noted pneumonia is likely a precipitating factor rather than the primary disease.",
+        "verdict": "PARTIAL",
+        "why": "The claim correctly aligns with the guideline that elevated BNP and symptoms like dyspnea and fatigue indicate decompensated heart failure, but its additional assertion that pneumonia is merely a precipitating factor is not addressed by the guideline.",
+        "guidelines": [
+          "heart_failure/labs",
+          "heart_failure/diagnosis"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "The diagnosis of decompensated congestive heart failure is supported by (1) a markedly elevated BNP\u202f>\u202f400\u202fpg/mL (the emergency\u2011room result was \u201celevated BNP,\u201d which in an acute setting typically exceeds 500\u202fpg/mL and correlates with high filling pressures), (2) the presence of at least three Framingham clinical criteria\u2014acute dyspnea, fatigue/tiredness, right\u2011sided abdominal pain (reflecting hepatic congestion), and peripheral edema or jugular venous distension\u2014combined with radiographic evidence of pulmonary congestion (the chest X\u2011ray shows infiltrates consistent with pneumonia but also interstitial edema typical of CHF), and (3) objective evidence of volume overload on exam/vitals (elevated jugular venous pressure, hepato\u2011jugular reflux, or a systolic blood pressure\u202f>\u202f140\u202fmm\u202fHg in a hypertensive patient), which together fulfill the accepted diagnostic thresholds for acute decompensated heart failure.",
+        "verdict": "PARTIAL",
+        "why": "The claim correctly follows guideline principles of using markedly elevated BNP, typical heart\u2011failure symptoms/signs, and imaging evidence for diagnosis, but it adds a systolic BP\u202f>\u202f140\u202fmm\u202fHg criterion that the guideline does not address.",
+        "guidelines": [
+          "heart_failure/labs",
+          "heart_failure/diagnosis"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "**Initial management** \u2013\u202fBegin rapid\u2011acting loop diuretic therapy (e.g., IV furosemide 40\u202fmg\u202f\u2192\u202ftitrate up to 80\u2013120\u202fmg or continuous infusion) to relieve systemic and pulmonary congestion, while providing supplemental oxygen to keep SpO\u2082\u202f>\u202f94\u202f% and a non\u2011invasive positive\u2011pressure strategy (CPAP/NIV) if respiratory distress persists.\u202fSimultaneously start empiric broad\u2011spectrum antibiotics for the incidentally identified pneumonia (e.g., IV ceftriaxone\u202f+\u202fazithromycin) and give IV vasodilator (e.g., nitroglycerin infusion) if the blood pressure allows (SBP\u202f>\u202f140\u202fmm\u202fHg) to reduce preload and afterload.\u202fMonitor urine output, electrolytes, renal function, and repeat BNP/clinical exam q6\u201112\u202fh to guide further therapy.",
+        "verdict": "PARTIAL",
+        "why": "The claim aligns with guideline principles on IV loop diuretics, oxygen supplementation, and vasodilator use for acute decompensated heart failure, but adds antibiotic therapy for pneumonia, which the guideline does not address.",
+        "guidelines": [
+          "heart_failure/treatment",
+          "heart_failure/acute_decompensation"
+        ]
+      }
+    ],
+    "conclusion": "Acute decompensated right\u2011sided predominant congestive heart failure precipitated by pneumonia is the working diagnosis, and the primary next step is immediate initiation of intravenous loop diuretic therapy (e.g., furosemide) with supportive oxygen, vasodilator as blood pressure permits, and empiric antibiotics for the pneumonia."
+  },
+  "Pneumonia \u2014 case 4831": {
+    "detected_condition": "pneumonia",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "The most likely primary condition is **pneumonia**. The child had a recent viral upper\u2011respiratory infection followed by an abrupt onset of cough and increased work of breathing, and the chest radiograph eventually showed a right\u2011upper\u2011lobe infiltrate (versus atelectasis), which is the classic imaging finding for bacterial pneumonia. Although reactive airway disease was considered, the presence of a focal infiltrate makes pneumonia the dominant diagnosis.",
+        "verdict": "SUPPORTED",
+        "why": "The claim follows the guideline\u2019s principle that pneumonia is diagnosed by a radiographic infiltrate together with compatible clinical features such as cough and increased work of breathing.",
+        "guidelines": [
+          "pneumonia/labs",
+          "pneumonia/diagnosis"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "**Diagnostic criteria that support pneumonia in this 3\u2011year\u2011old**\n\n1. **Clinical presentation** \u2013 The child meets age\u2011specific tachypnea criteria for pneumonia (respiratory rate\u202f>\u202f40\u202fbreaths/min for a 2\u2011 to 5\u2011year\u2011old) and has an abrupt onset of cough with increased work of breathing and fever (typically\u202f\u2265\u202f38\u202f\u00b0C) after a recent viral URI, which are core clinical signs in the WHO/IDSA pediatric pneumonia algorithms.  \n\n2. **Radiographic evidence** \u2013 The definitive chest radiograph shows a focal right\u2011upper\u2011lobe opacity described as an infiltrate (versus atelectasis), fulfilling the radiographic requirement for bacterial pneumonia (a new, localized alveolar infiltrate on a standard posterior\u2011anterior or lateral view).  \n\n3. **Laboratory corroboration (if available)** \u2013 Although not explicitly reported, a peripheral white\u2011blood\u2011cell count\u202f>\u202f15\u202f\u00d7\u202f10\u2079/L or an elevated C\u2011reactive protein\u202f>\u202f5\u202fmg/dL would further reinforce the diagnosis; these inflammatory markers are commonly used to differentiate bacterial from viral lower\u2011respiratory infection in children.  \n\nTogether, the age\u2011adjusted tachypnea, fever, focal infiltrate on imaging, and supportive inflammatory labs confirm the primary diagnosis of pneumonia.",
+        "verdict": "SUPPORTED",
+        "why": "The claim aligns with the guideline\u2019s principle that pneumonia diagnosis requires compatible clinical features (fever, cough, respiratory distress), radiographic infiltrate, and supportive laboratory evidence such as elevated WBC and CRP.",
+        "guidelines": [
+          "pneumonia/labs",
+          "pneumonia/diagnosis"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "**Initial management** \u2013 Admit for inpatient care, give supplemental oxygen to keep SpO\u2082\u202f\u2265\u202f94\u202f% and maintain hydration (IV fluids if oral intake is limited). Start empiric antimicrobial therapy for typical bacterial pneumonia in this age group\u2014IV ampicillin (or amoxicillin\u202f+\u202fclavulanate) 200\u202fmg/kg/day divided q6\u202fh (or ceftriaxone 75\u202fmg/kg once daily if penicillin\u2011allergic or severe). Continue bronchodilator therapy (nebulized albuterol) and systemic steroids only if there is concurrent wheezing or reactive\u2011airway component.",
+        "verdict": "UNSUPPORTED",
+        "why": "The claim recommends inpatient monotherapy with a beta\u2011lactam (ampicillin/amoxicillin\u2011clavulanate or ceftriaxone) without the guideline\u2011endorsed combination (beta\u2011lactam\u202f+\u202fmacrolide or a respiratory fluoroquinolone), contradicting the guideline\u2019s empiric treatment principle.",
+        "guidelines": [
+          "pneumonia/treatment",
+          "pneumonia/labs"
+        ]
+      }
+    ],
+    "conclusion": "The child is diagnosed with bacterial pneumonia and should be admitted for inpatient care with supplemental oxygen, hydration (IV fluids as needed) and empiric IV ampicillin (or ceftriaxone if penicillin\u2011allergic) as the primary treatment."
+  },
+  "Sepsis \u2014 case 4481": {
+    "detected_condition": "sepsis",
+    "trace": [
+      {
+        "hop_name": "Hop 1: Identification",
+        "reasoning": "The most likely primary condition is **spontaneous bacterial peritonitis (SBP) precipitating sepsis**. In a cirrhotic patient with ascites (as suggested by the abdominal ultrasound), fever, tachycardia, leukopenia, severe thrombocytopenia, and a month\u2011long history of epigastric pain, SBP is the classic source of infection that can rapidly progress to sepsis. His underlying liver disease, immunocompromised state, and recent medication lapse further increase the risk for this intra\u2011abdominal infection.",
+        "verdict": "SUPPORTED",
+        "why": "The claim identifies an infection (SBP) leading to sepsis and notes leukopenia and thrombocytopenia, which aligns with the guideline\u2019s definition of sepsis as infection\u2011driven organ dysfunction and its listed laboratory abnormalities.",
+        "guidelines": [
+          "sepsis/diagnosis",
+          "sepsis/labs"
+        ]
+      },
+      {
+        "hop_name": "Hop 2: Diagnostic Confirmation",
+        "reasoning": "The presence of fever\u202f101.3\u202f\u00b0F, tachycardia\u202f130\u202fbeats/min, tachypnea\u202f24\u202fbreaths/min and a leukocyte count of\u202f4\u202f\u00d7\u202f10\u00b3/\u00b5L (leukopenia) fulfills the SIRS criteria, and together with the markedly low platelet count\u202f22,000/\u00b5L and cirrhosis\u2011related ascites on ultrasound meets the clinical definition of sepsis. In a cirrhotic patient, spontaneous bacterial peritonitis is diagnosed when the ascitic fluid polymorphonuclear leukocyte (PMN) count is\u202f>250\u202fcells/mm\u00b3 (or a positive culture) in the setting of fever, abdominal pain, and the above systemic inflammatory response\u2014findings that are strongly suggested by his epigastric pain, fever, and the ultrasound evidence of ascites.",
+        "verdict": "PARTIAL",
+        "why": "The claim correctly aligns with the guideline that leukopenia and thrombocytopenia are sepsis markers, but it adds details about spontaneous bacterial peritonitis criteria that are not addressed in the provided sepsis guideline.",
+        "guidelines": [
+          "sepsis/labs",
+          "sepsis/septic_shock"
+        ]
+      },
+      {
+        "hop_name": "Hop 3: Management",
+        "reasoning": "- **Immediate source control:** Perform a diagnostic paracentesis at bedside (or as soon as possible) and send ascitic fluid for cell count, Gram stain, and culture; if the PMN count is\u202f\u2265250\u202fcells/mm\u00b3, treat as SBP.  \n- **Empiric antimicrobial therapy:** Start intravenous cefotaxime (2\u202fg every 8\u202fh) or, if there is a high prevalence of resistant organisms, ceftriaxone\u202f+\u202fmetronidazole or a carbapenem (e.g., meropenem) pending culture results.  \n- **Adjunctive support:** Give intravenous albumin 1.5\u202fg/kg (\u2248\u202f100\u202fg) on day\u202f1 and 1\u202fg/kg on day\u202f3 to reduce renal dysfunction, and provide fluid resuscitation to maintain MAP\u202f\u2265\u202f65\u202fmm\u202fHg; transfuse platelets if invasive procedures are needed (e.g., >\u202f10\u202f000\u202f/\u00b5L for paracentesis, >\u202f50\u202f000\u202f/\u00b5L for central line).",
+        "verdict": "PARTIAL",
+        "why": "The claim aligns with the sepsis guideline on giving broad\u2011spectrum antibiotics and targeting MAP\u202f\u2265\u202f65\u202fmm\u202fHg, but adds source\u2011control via paracentesis, albumin therapy, and platelet\u2011transfusion thresholds that are not addressed in the guideline.",
+        "guidelines": [
+          "sepsis/treatment",
+          "sepsis/labs"
+        ]
+      }
+    ],
+    "conclusion": "Spontaneous bacterial peritonitis precipitating sepsis is the most likely diagnosis, and the immediate priority is bedside diagnostic paracentesis with ascitic fluid analysis followed by prompt empiric intravenous cefotaxime (with albumin support) while initiating sepsis resuscitation."
+  }
+}

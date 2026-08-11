@@ -46,16 +46,38 @@ class ConstraintChecker:
             "management guidelines, so the general principle applies to it. A specific lab "
             "value, drug, or sub-diagnosis that is a valid instance of the guideline's general "
             "category counts as SUPPORTED, not UNSUPPORTED.\n\n"
+            "The following clinically related entities belong to the SAME guideline family, "
+            "so a claim naming any member is covered when the retrieved guideline is for that "
+            "family: atrial fibrillation and atrial flutter are both covered by the AFib "
+            "guideline; sepsis, septic shock, bacteremia, and urosepsis are all covered by the "
+            "sepsis guideline; CHF, HFrEF, HFpEF, cardiomyopathy, and decompensated heart "
+            "failure are all covered by the heart_failure guideline; CAD, ACS, STEMI, NSTEMI, "
+            "unstable angina, and MI are all covered by the cad_mi guideline; AKI, acute renal "
+            "failure, and acute tubular necrosis (ATN) are all covered by the AKI guideline. If "
+            "the reasoning names a specific entity within one of these families and the "
+            "retrieved guideline is for that family, treat it as SUPPORTED (not UNSUPPORTED), "
+            "provided the underlying claim still aligns with the guideline's principles.\n\n"
+            "CONTRADICTION OVERRIDES FAMILY MATCH. Family membership only bridges terminology; "
+            "it NEVER rescues a claim whose clinical content conflicts with the guideline. If a "
+            "claim names an entity in the correct disease family but RECOMMENDS something the "
+            "guideline advises against, or ASSERTS something the guideline explicitly rules out, "
+            "that is a CONTRADICTION and the verdict is UNSUPPORTED -- even though the disease "
+            "family matches. Decision rule: same family AND aligns with the principle -> "
+            "SUPPORTED; same family BUT contradicts the principle -> UNSUPPORTED; a different "
+            "disease entirely -> UNSUPPORTED.\n\n"
             "Use the three verdicts as follows:\n"
             "- SUPPORTED: the claim's clinical principle matches a principle in the guideline, "
             "even if expressed with different words, instantiated with specific examples, or "
             "naming a specific sub-type that falls under the guideline's general category.\n"
             "- PARTIAL: the claim is mostly aligned with the guideline, but it ALSO adds a "
             "specific assertion that the guideline neither supports nor contradicts.\n"
-            "- UNSUPPORTED: use this ONLY when the claim's core condition is genuinely a "
-            "DIFFERENT disease category that the guideline does not cover at all (for example, "
-            "a cardiac arrhythmia or a drug overdose checked against an AKI or sepsis "
-            "guideline). A specific sub-type of the guideline's own condition is NOT "
+            "- UNSUPPORTED: use this in EITHER of two cases -- (1) the claim's core condition is "
+            "genuinely a DIFFERENT disease category the guideline does not cover at all (e.g. a "
+            "cardiac arrhythmia or drug overdose checked against an AKI or sepsis guideline); OR "
+            "(2) the claim CONTRADICTS the guideline -- recommending something it advises against, "
+            "or asserting something it explicitly rules out -- EVEN IF the condition is within the "
+            "correct disease family. A same-family sub-type that ALIGNS with the guideline's "
+            "principle is NOT UNSUPPORTED; a same-family claim that CONTRADICTS the principle IS "
             "UNSUPPORTED.\n\n"
             "Do not penalize a claim merely for being more specific than the guideline."
         )
@@ -73,7 +95,9 @@ falls UNDER the guideline's general category is covered by that category -- in a
 cases the verdict is SUPPORTED. Use PARTIAL when the claim is mostly aligned but adds a
 specific assertion the guideline neither supports nor contradicts. Use UNSUPPORTED ONLY
 when the claim's core condition is a genuinely DIFFERENT disease category not covered by
-the guideline at all (e.g. a cardiac arrhythmia or drug overdose vs. an AKI/sepsis guideline).
+the guideline (e.g. a cardiac arrhythmia vs. an AKI/sepsis guideline), OR when the claim
+CONTRADICTS the guideline (recommends what it advises against, or asserts what it rules out)
+even if the disease family matches.
 
 Respond in EXACTLY this format:
 VERDICT: [SUPPORTED / PARTIAL / UNSUPPORTED]

@@ -1,79 +1,74 @@
 ######################################################################
-# E4 SHOWCASE: case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt
-# Labeled condition: SEPSIS, PNEUMONIA, AKI
+# E4 SHOWCASE: case_4915_CAD_MI__Cardiovascular___Pulmonary.txt
+# Labeled condition: CAD_MI
 ######################################################################
 
 PATIENT CASE (excerpt):
-REASON FOR CONSULTATION:, Acute renal failure.,HISTORY: , Limited data is available; I have reviewed his admission notes. Apparently this man was found down by a family member, was taken to Medical Center, and subsequently flown here. He has got respiratory failure, multi-organ system failure syndrome, and has renal insufficiency, as well. Markers of renal function have been fairly stable. I do not presently see indicators that he historically has been oliguric. The BUN and creatinine have been ...
+CONDITION: CAD_MI
+SPECIALTY: Cardiovascular / Pulmonary
+DESCRIPTION: Percutaneous intervention with drug-eluting stent placement to the ostium of the PDA.
+============================================================
+PROCEDURES PERFORMED:,1. Left heart catheterization with coronary angiography and left ventricular pressure measurement.,2. Left ventricular angiography was not performed.,3. Right posterior descending artery percutaneous transluminal coronary angioplasty followed by stenting.,4. Rig...
 
 ======================================================================
   SYSTEM A: Single-shot (no guidelines, no verification)
 ======================================================================
 **Most Likely Diagnosis**  
-Acute kidney injury (AKI) – stage 3, intrinsic acute tubular necrosis (ATN) secondary to septic‑/hypoperfusion‑related multi‑organ failure. The modest CPK rise (≈1,500 U/L) makes rhabdomyolysis unlikely to be the primary driver; the picture fits ischemic ATN in the setting of hypotension, possible ACE‑inhibitor/diuretic exposure, and ongoing sepsis.
+- Acute coronary syndrome presenting as a non‑ST‑elevation myocardial infarction (NSTEMI) secondary to a critical lesion in the right posterior descending artery (treated with drug‑eluting stent placement).
 
-**Initial Management Recommendations**
+**Recommended Initial Management**  
 
-| Goal | Action |
-|------|--------|
-| **Optimize renal perfusion** | • Maintain MAP ≥ 65 mm Hg (target 70–75 mm Hg) with norepinephrine ± vasopressin. <br>• Continue judicious isotonic fluid boluses only if volume‑responsive (dynamic indices, bedside ultrasound). |
-| **Remove/avoid nephrotoxins** | • Hold lisinopril, diuretics, NSAIDs, IV contrast, and any other potentially nephrotoxic drugs. |
-| **Correct metabolic derangements** | • Monitor and treat hyper‑K⁺, metabolic acidosis, and volume overload. <br>• Replace calcium if symptomatic; maintain phosphate within normal range. |
-| **Renal replacement therapy** | • Initiate continuous renal replacement therapy (CRRT) now if any of the following are present: <br> – Persistent oliguria/anuria despite MAP goal <br> – Severe electrolyte abnormalities (K⁺ > 6.5 mmol/L, refractory acidosis) <br> – Fluid overload impairing ventilation <br> – Uremic complications (e.g., encephalopathy, pericarditis). |
-| **Treat underlying sepsis** | • Continue broad‑spectrum antibiotics per culture data. <br>• Source control (e.g., drainage, debridement) if identifiable. |
-| **Supportive care** | • Maintain adequate nutrition (continue parenteral nutrition). <br>• Daily assessment of fluid balance, urine output, and renal labs (BUN, creatinine, electrolytes). <br>• Consider stress‑dose steroids only if adrenal insufficiency is suspected. |
-| **Monitoring** | • Hourly urine output (or via Foley). <br>• Daily serum creatinine, BUN, electrolytes, lactate. <br>• Hemodynamic parameters (MAP, CVP, cardiac output if available). |
+| Component | Immediate Action |
+|-----------|-------------------|
+| **Antiplatelet therapy** | Aspirin 81 mg daily + P2Y12 inhibitor (e.g., clopidogrel 75 mg daily, ticagrelor 90 mg BID, or prasugrel 10 mg daily if no contraindications) for at least 12 months. |
+| **Anticoagulation** | Continue therapeutic anticoagulation (e.g., unfractionated heparin infusion or low‑molecular‑weight heparin) until the patient is fully anticoagulated on oral agents, per institutional protocol. |
+| **Beta‑blocker** | Initiate metoprolol succinate (or equivalent) unless contraindicated (e.g., severe COPD with bronchospasm). Titrate to target HR 60‑70 bpm. |
+| **Statin** | High‑intensity statin (e.g., atorvastatin 40‑80 mg daily) regardless of baseline LDL. |
+| **ACE‑I/ARB** | Start an ACE inhibitor (e.g., lisinopril 5‑10 mg daily) or ARB if ACE‑I not tolerated, especially if LV dysfunction or hypertension. |
+| **Nitroglycerin** | PRN sublingual/IV for chest discomfort; consider oral long‑acting nitrate if persistent angina. |
+| **Monitoring** | Admit to telemetry/CCU for 24‑48 h; monitor cardiac enzymes, ECG changes, hemodynamics, and access site for bleeding. |
+| **COPD management** | Continue bronchodilators, steroids, and oxygen as needed; avoid β‑agonists that may exacerbate tachyarrhythmias. |
+| **Secondary prevention & discharge planning** | Arrange cardiac rehabilitation, smoking cessation, diet/exercise counseling, and follow‑up within 1‑2 weeks. |
 
-**Key Points**  
-- The primary problem is ischemic ATN from septic/hypotensive insult; early hemodynamic optimization and avoidance of further nephrotoxins are critical.  
-- CRRT is preferred in a mechanically ventilated, hemodynamically unstable patient to gently manage fluid, electrolytes, and uremia while the kidneys recover.  
-- Re‑evaluate renal function daily; if urine output and creatinine improve, we
+These steps address the acute NSTEMI, ensure stent patency, and initiate long‑term secondary‑prevention measures.
 
 ======================================================================
   SYSTEM B: Multi-hop + guidelines (NO verification)
 ======================================================================
 
 [Hop 1: Identification]
-The most likely primary condition is **septic shock with secondary acute kidney injury**. The patient presents with respiratory failure, multi‑organ dysfunction, stable but elevated BUN/creatinine, and is receiving broad‑spectrum antibiotics and mechanical ventilation—findings that fit a severe sepsis picture progressing to septic shock, which commonly precipitates an acute tubular necrosis–type renal failure. The lack of markedly elevated CPK or other rhabdomyolysis markers makes a primary muscle‑breakdown etiology less probable.
-(guidelines retrieved: ['sepsis/screening', 'sepsis/septic_shock'] -- but NOT verified)
+The most likely primary condition is an acute non‑ST‑segment elevation myocardial infarction (NST‑EMI) secondary to an acute coronary syndrome involving the right posterior descending artery. The patient’s history of coronary artery disease, the presence of mildly elevated cardiac enzymes, and the need for urgent percutaneous coronary intervention with stent placement to a critical ostial lesion all point to an NST‑EMI as the underlying problem.
+(guidelines retrieved: ['aki/causes', 'aki/labs'] -- but NOT verified)
 
 [Hop 2: Diagnostic Confirmation]
-The patient meets the Sepsis‑3 definition of septic shock: he is hypotensive (systolic BP ≈ 95 mm Hg) despite fluid resuscitation and requires vasopressor support, and his serum lactate is markedly elevated (> 4 mmol/L), indicating persistent tissue hypoperfusion. In addition, his qSOFA score is 3 (RR > 22 /min, altered mental status, SBP ≤ 100 mm Hg), and his acute kidney injury fulfills the KDIGO criteria for stage 2 AKI (creatinine rise ≥ 2‑fold from baseline, with BUN/creatinine remaining stably elevated). These objective findings together confirm septic shock with secondary acute tubular necrosis‑type renal failure.
-(guidelines retrieved: ['sepsis/screening', 'sepsis/labs'] -- but NOT verified)
+The universal definition of myocardial infarction requires (1) a rise and/or fall in a cardiac‑troponin concentration above the 99th‑percentile upper reference limit **and** (2) evidence of myocardial ischemia (symptoms, new ischemic ECG changes, or imaging demonstrating a new loss of viable myocardium). In this patient the troponin I was 0.13 ng/mL (reference < 0.04 ng/mL) with a documented upward trend, and the admission ECG showed ≥ 1 mm horizontal ST‑segment depression in the inferior leads consistent with ischemia; together these findings meet the biochemical and electro‑cardiographic criteria for an NST‑EMI. The urgent coronary angiogram then confirmed a culprit ostial lesion of the right posterior‑descending artery, satisfying the third required element—demonstration of a coronary atherosclerotic plaque rupture or thrombus responsible for the infarction.
+(guidelines retrieved: ['aki/labs', 'aki/causes'] -- but NOT verified)
 
 [Hop 3: Management]
-Begin with the sepsis “hour‑1 bundle”: obtain blood (and any other relevant) cultures before antibiotics, then start broad‑spectrum empiric antimicrobial therapy and give an immediate 30 mL/kg crystalloid bolus while monitoring for fluid overload. If hypotension persists after fluids, initiate a vasopressor (e.g., norepinephrine) to keep MAP ≥ 65 mm Hg, and continuously assess urine output and renal perfusion, adjusting fluids and considering early renal replacement therapy if oliguria or worsening AKI develops.
-(guidelines retrieved: ['sepsis/treatment', 'sepsis/screening'] -- but NOT verified)
+The patient should be started on guideline‑directed medical therapy for NST‑EMI after successful PCI: give dual antiplatelet therapy (aspirin 81–325 mg daily + a P2Y12 inhibitor such as ticagrelor 90 mg BID or clopidogrel 75 mg daily) for a minimum of 12 months together with a high‑intensity statin (e.g., atorvastatin 80 mg daily). In addition, initiate a β‑blocker and an ACE‑I/ARB (or ARNI) unless contraindicated, and monitor the patient on telemetry with serial cardiac enzymes and renal function given recent contrast exposure.
+(guidelines retrieved: ['aki/treatment', 'aki/staging'] -- but NOT verified)
 
 ======================================================================
   SYSTEM C: Multi-hop + guidelines + VERIFICATION (full system)
 ======================================================================
 
 [Hop 1: Identification]
-**Most likely primary condition:** Septic‑associated acute tubular necrosis (intrinsic acute kidney injury) secondary to a severe systemic infection and hemodynamic instability.
-
-**Reasoning:** The patient was found down, is now in respiratory failure, requires mechanical ventilation, and has multi‑organ dysfunction—all classic features of a profound septic or shock state. In such settings, renal perfusion is markedly reduced, leading to ischemic injury of the tubular epithelium (ATN). The relatively stable BUN/creatinine trend, modest CPK elevation (≈1500 U/L) that does not support severe rhabdomyolysis, and lack of overt myoglobinuria further point toward an ischemic, sepsis‑driven intrinsic renal injury rather than a primary glomerular or obstructive process.
+The most likely primary condition is an acute non‑ST‑segment elevation myocardial infarction (NSTEMI) secondary to underlying coronary artery disease. The patient’s history of CAD, mildly elevated cardiac enzymes, and presentation with a non‑ST‑elevation MI prompted urgent cardiac catheterization, which identified a lesion in the posterior descending artery that required percutaneous transluminal coronary angioplasty and drug‑eluting stent placement.
   VERIFICATION [OK] SUPPORTED
-  WHY: The guideline links sepsis/septic shock with renal involvement (elevated creatinine) and identifies systemic infection and hemodynamic instability as causes of organ dysfunction, which supports the claim that septic shock can lead to intrinsic AKI such as ATN.
-  Guidelines checked: ['sepsis/septic_shock', 'sepsis/labs']
+  WHY: The claim identifies an NSTEMI based on troponin elevation without ST‑segment elevation and proceeds to urgent cardiac catheterization with PCI, which aligns with the guideline’s definition of NSTEMI and its recommendation for early invasive management in appropriate ACS patients.
+  Guidelines checked: ['cad_mi/diagnosis', 'cad_mi/risk_stratification']
 
 [Hop 2: Diagnostic Confirmation]
-**Diagnostic criteria that support septic‑associated acute tubular necrosis (ATN) in this patient**
-
-1. **KDIGO definition of AKI** – The patient meets the KDIGO threshold for intrinsic AKI because his serum creatinine has risen ≥0.3 mg/dL (or ≥1.5‑fold) from his presumed baseline within the past 48 h (the chart shows a new creatinine of ~2.1 mg/dL when his prior outpatient value was ~1.2 mg/dL).  In addition, his urine output has fallen below 0.5 mL kg⁻¹ h⁻¹ for >6 h despite ongoing fluid resuscitation, fulfilling the oliguria criterion.
-
-2. **Fractional excretion of sodium (FeNa) and sediment** – In the setting of presumed adequate volume repletion (he has received large‑volume IV fluids) a FeNa > 2 % (the most recent labs show FeNa ≈ 3.5 %) and the presence of muddy‑brown granular epithelial casts on urine microscopy are classic for ischemic ATN rather than a prerenal azotemia.
-
-3. **Sepsis‑related organ dysfunction** – He meets Sepsis‑3 criteria: a documented or strongly suspected infection (broad‑spectrum antibiotics already started), a SOFA score increase ≥2 (mechanical ventilation → respiratory SOFA = 3, hypotension requiring vasopressors → cardiovascular SOFA = 3, and the new AKI → renal SOFA = 2), and a serum lactate >2 mmol/L (recorded lactate = 3.4 mmol/L). The combination of septic shock with the above renal laboratory findings makes septic‑associated ATN the most likely primary renal diagnosis.
-  VERIFICATION [~] PARTIAL
-  WHY: The claim correctly applies the guideline’s septic shock criteria (hypotension requiring vasopressors and lactate > 2 mmol/L) but adds KDIGO AKI definitions and FeNa findings, which are not addressed in the sepsis guideline.
-  Guidelines checked: ['sepsis/treatment', 'sepsis/septic_shock']
+The diagnosis of an acute non‑ST‑segment elevation myocardial infarction (NSTEMI) is confirmed when **(1)** there is a rise and/or fall of a cardiac‑specific biomarker (most commonly high‑sensitivity troponin I or T) to a value **above the 99th percentile of the reference population** (e.g., troponin I > 0.04 ng/mL) and **(2)** there are ischemic changes on the 12‑lead ECG **without persistent ST‑segment elevation** (e.g., ≥0.5 mm horizontal or down‑sloping ST‑segment depression or T‑wave inversion in contiguous leads). In this patient, the “mildly positive cardiac enzyme markers” (troponin modestly above the assay’s upper reference limit) together with the clinical presentation of chest discomfort in the setting of known CAD and the absence of ST‑segment elevation on the ECG satisfy the universal definition criteria for NSTEMI.
+  VERIFICATION [OK] SUPPORTED
+  WHY: The claim aligns with the guideline’s definition of NSTEMI, requiring a rise/fall of high‑sensitivity troponin above the 99th percentile and accompanying ischemic ECG changes without persistent ST‑segment elevation.
+  Guidelines checked: ['cad_mi/labs', 'cad_mi/diagnosis']
 
 [Hop 3: Management]
-Begin with aggressive hemodynamic optimization: continue goal‑directed fluid resuscitation to achieve a MAP ≥ 65 mm Hg (using balanced crystalloids) while titrating vasopressors (e.g., norepinephrine) to maintain renal perfusion, and monitor urine output ≥ 0.5 mL/kg/h. Initiate early renal‑protective measures—avoid nephrotoxic drugs, adjust drug dosing for the current creatinine, and consider a renal‑replacement therapy (continuous venovenous hemofiltration or hemodialysis) if oliguria persists >6 h, refractory hyper‑kalemia, severe acidosis, or volume overload develops. Maintain broad‑spectrum antimicrobial coverage, source control, and tight glycemic control as part of the overall sepsis bundle.
-  VERIFICATION [~] PARTIAL
-  WHY: The claim correctly includes the guideline’s principles of goal‑directed fluid resuscitation, MAP ≥ 65 mm Hg with vasopressors, and broad‑spectrum antibiotics, but adds renal‑protective measures, urine‑output targets, renal replacement criteria, tight glycemic control, and source control that are not addressed in the provided sepsis guideline.
-  Guidelines checked: ['sepsis/treatment', 'sepsis/septic_shock']
+For an NSTEMI the initial strategy is a “MONA‑B” regimen combined with early antithrombotic therapy and rapid transition to an invasive approach. Give chewable aspirin (162–325 mg) immediately, add a P2Y12 inhibitor (e.g., clopidogrel 300 mg loading or ticagrelor 180 mg loading), start unfractionated heparin (weight‑based bolus ± infusion) and a β‑blocker (unless contraindicated), and provide sublingual nitroglycerin for pain and oxygen only if saturations fall < 90 %. These measures should be instituted promptly while arranging early coronary angiography with the intent for PCI, as was done in this case.
+  VERIFICATION [OK] SUPPORTED
+  WHY: The claim’s recommendations (aspirin loading, P2Y12 inhibitor, unfractionated heparin, β‑blocker if no contraindication, nitroglycerin for pain, and early coronary angiography for PCI) match the guideline’s NSTEMI management principles.
+  Guidelines checked: ['cad_mi/treatment', 'cad_mi/chronic_cad']
 
 ======================================================================
   KEY TAKEAWAY

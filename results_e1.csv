@@ -1,10 +1,57 @@
-case,labeled_condition,A_output_words,B_hops,B_guideline_refs,C_supported,C_partial,C_unsupported
-case_057_SEPSIS_AKI_Nephrology.txt,"SEPSIS, AKI",235,3,6,2,1,0
-case_024_SEPSIS_SOAP___Chart___Progress_Notes.txt,SEPSIS,189,3,6,1,2,0
-case_012_SEPSIS_AKI_SOAP___Chart___Progress_Notes.txt,"SEPSIS, AKI",371,3,6,0,2,1
-case_051_AKI_Nephrology.txt,AKI,143,3,6,2,1,0
-case_056_SEPSIS_AKI_Nephrology.txt,"SEPSIS, AKI",218,3,6,1,1,1
-case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt,"SEPSIS, PNEUMONIA, AKI",329,3,6,0,3,0
-case_034_PNEUMONIA_AKI_SOAP___Chart___Progress_Notes.txt,"PNEUMONIA, AKI",328,3,6,0,0,3
-case_041_AKI_SOAP___Chart___Progress_Notes.txt,AKI,291,3,6,0,0,3
-case_035_AKI_SOAP___Chart___Progress_Notes.txt,AKI,199,3,6,0,1,2
+case,detected_condition,labeled_condition,A_output_words,B_hops,B_guideline_refs,C_supported,C_partial,C_unsupported
+case_3007_SEPSIS__Nephrology.txt,aki,SEPSIS,284,3,6,0,0,3
+case_3105_HEART_FAILURE__Hospice___Palliative_Care.txt,heart_failure,HEART_FAILURE,329,3,6,0,3,0
+case_3299_ATRIAL_FIB__General_Medicine.txt,atrial_fib,ATRIAL_FIB,297,3,6,0,3,0
+case_3949_HEART_FAILURE__Discharge_Summary.txt,heart_failure,HEART_FAILURE,299,3,6,2,1,0
+case_3955_PNEUMONIA__Discharge_Summary.txt,pneumonia,PNEUMONIA,258,3,6,2,1,0
+case_3977_HEART_FAILURE__Discharge_Summary.txt,heart_failure,HEART_FAILURE,280,3,6,1,2,0
+case_4135_AKI__Consult___History_and_Phy_.txt,aki,AKI,173,3,6,3,0,0
+case_4141_AKI__Consult___History_and_Phy_.txt,aki,AKI,341,3,6,3,0,0
+case_4260_SEPSIS__Consult___History_and_Phy_.txt,aki,SEPSIS,295,3,6,0,0,3
+case_4270_AKI__Consult___History_and_Phy_.txt,aki,AKI,284,3,6,2,1,0
+case_4335_AKI__Consult___History_and_Phy_.txt,aki,AKI,211,3,6,1,1,1
+case_4345_SEPSIS__Consult___History_and_Phy_.txt,sepsis,SEPSIS,256,3,6,1,2,0
+case_4359_AKI__Consult___History_and_Phy_.txt,aki,AKI,271,3,6,1,1,1
+case_4366_CAD_MI__Consult___History_and_Phy_.txt,cad_mi,CAD_MI,325,3,6,0,1,2
+case_4369_PNEUMONIA__Consult___History_and_Phy_.txt,pneumonia,PNEUMONIA,284,3,6,1,2,0
+case_4377_HEART_FAILURE__Consult___History_and_Phy_.txt,heart_failure,HEART_FAILURE,285,3,6,1,2,0
+case_4378_CAD_MI__Consult___History_and_Phy_.txt,cad_mi,CAD_MI,301,3,6,0,1,2
+case_4394_HEART_FAILURE__Consult___History_and_Phy_.txt,atrial_fib,HEART_FAILURE,375,3,6,0,1,2
+case_4481_SEPSIS__Consult___History_and_Phy_.txt,sepsis,SEPSIS,250,3,6,1,2,0
+case_4502_CAD_MI__Consult___History_and_Phy_.txt,cad_mi,CAD_MI,346,3,6,1,1,1
+case_4629_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,268,3,6,1,2,0
+case_4720_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,219,3,6,1,2,0
+case_4723_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,236,3,6,2,1,0
+case_4762_HEART_FAILURE__Cardiovascular___Pulmonary.txt,heart_failure,HEART_FAILURE,258,3,6,3,0,0
+case_4776_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,241,3,6,2,1,0
+case_4809_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,336,3,6,1,2,0
+case_4812_PNEUMONIA__Cardiovascular___Pulmonary.txt,heart_failure,PNEUMONIA,357,3,6,0,0,3
+case_4817_AKI__Cardiovascular___Pulmonary.txt,sepsis,AKI,280,3,6,0,3,0
+case_4831_PNEUMONIA__Cardiovascular___Pulmonary.txt,pneumonia,PNEUMONIA,262,3,6,2,1,0
+case_4835_HEART_FAILURE__Cardiovascular___Pulmonary.txt,heart_failure,HEART_FAILURE,275,3,6,2,1,0
+case_4857_HEART_FAILURE__Cardiovascular___Pulmonary.txt,atrial_fib,HEART_FAILURE,270,3,6,0,1,2
+case_4858_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,cad_mi,ATRIAL_FIB,160,3,6,0,0,3
+case_4859_HEART_FAILURE__Cardiovascular___Pulmonary.txt,heart_failure,HEART_FAILURE,267,3,6,1,1,1
+case_4867_HEART_FAILURE__Cardiovascular___Pulmonary.txt,atrial_fib,HEART_FAILURE,322,3,6,0,1,2
+case_4871_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,250,3,6,1,2,0
+case_4887_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,169,3,6,0,3,0
+case_4888_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,298,3,6,2,1,0
+case_4891_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,165,3,6,1,2,0
+case_4894_HEART_FAILURE__Cardiovascular___Pulmonary.txt,heart_failure,HEART_FAILURE,226,3,6,2,1,0
+case_4895_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,240,3,6,0,3,0
+case_4898_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,247,3,6,2,0,1
+case_4901_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,heart_failure,ATRIAL_FIB,228,3,6,1,2,0
+case_4903_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,299,3,6,1,2,0
+case_4908_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,222,3,6,2,1,0
+case_4910_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,326,3,6,1,2,0
+case_4915_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,304,3,6,2,1,0
+case_4923_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,152,3,6,3,0,0
+case_4925_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,193,3,6,2,0,1
+case_4927_CAD_MI__Cardiovascular___Pulmonary.txt,cad_mi,CAD_MI,203,3,6,1,1,1
+case_4956_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,245,3,6,0,3,0
+case_4957_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,173,3,6,2,0,1
+case_4965_ATRIAL_FIB__Cardiovascular___Pulmonary.txt,atrial_fib,ATRIAL_FIB,247,3,6,2,1,0
+case_4976_HEART_FAILURE__Cardiovascular___Pulmonary.txt,heart_failure,HEART_FAILURE,300,3,6,1,2,0
+case_1479_OUT_OF_SCOPE_Rheumatology.txt,,OUT_OF_SCOPE,260,3,6,0,0,3
+case_1757_OUT_OF_SCOPE_Psychiatry.txt,,OUT_OF_SCOPE,209,3,6,0,0,3
+case_2305_OUT_OF_SCOPE_Orthopedic.txt,,OUT_OF_SCOPE,330,3,6,0,0,3

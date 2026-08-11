@@ -1,0 +1,131 @@
+condition,score,row_index,description
+sepsis,12,1921,"This is a 3-week-old, NSVD, Caucasian baby boy transferred from ABCD Memorial Hospital for rule out sepsis and possible congenital heart disease."
+sepsis,7,3421,"Sepsis, possible SBP.  A 53-year-old Hispanic man with diabetes, morbid obesity, hepatitis C, cirrhosis, history of alcohol and cocaine abuse presente"
+sepsis,6,3859,Consultation for ICU management for a patient with possible portal vein and superior mesenteric vein thrombus leading to mesenteric ischemia.
+sepsis,5,3276,"Hypothermia.  Rule out sepsis, was negative as blood cultures, sputum cultures, and urine cultures were negative.  Organic brain syndrome.  Seizure di"
+sepsis,5,1938,"Congestion, tactile temperature."
+sepsis,5,1931,"Irritable baby, 6-week-old, with fever for approximately 24 hours."
+sepsis,5,700,Insertion of left femoral circle-C catheter (indwelling catheter).  Chronic renal failure.  The patient was discovered to have a MRSA bacteremia with 
+sepsis,4,85,"Neurogenic bladder, in a patient catheterizing himself 3 times a day, changing his catheter 3 times a week"
+sepsis,3,4085,A woman with a remote history of ileojejunal bypass followed by gastric banding to facilitate weight loss.
+sepsis,3,3287,"History of diabetes, osteoarthritis, atrial fibrillation, hypertension, asthma, obstructive sleep apnea on CPAP, diabetic foot ulcer, anemia, and left"
+aki,9,2987,"Renal failure evaluation for possible dialysis therapy.  Acute kidney injury of which etiology is unknown at this time, with progressive azotemia unre"
+aki,6,3859,Consultation for ICU management for a patient with possible portal vein and superior mesenteric vein thrombus leading to mesenteric ischemia.
+aki,6,3326,"The patient is a 61-year-old lady who was found down at home and was admitted for respiratory failure, septic shock, acute renal failure as well as me"
+aki,6,3159,"Leukocytosis, acute deep venous thrombosis, right lower extremity with bilateral pulmonary embolism, on intravenous heparin complicated with acute ren"
+aki,6,2997,"Patient with a diagnosis of pancreatitis, developed hypotension and possible sepsis and respiratory, as well as renal failure."
+aki,6,2983,"Acute renal failure, suspected, likely due to multi-organ system failure syndrome."
+aki,5,1426,"Still having diarrhea, decreased appetite."
+aki,4,4442,"Abnormal cardiac enzyme profile.  The patient is a 66-year-old gentleman, was brought into emergency room with obtundation.  The patient was mechanica"
+pneumonia,10,2796,"Approximately one and a half years ago, patient fell down while walking in the living room from the bedroom.  At that time, he reports both legs gave "
+pneumonia,9,4439,"Elevated BNP.  Diastolic heart failure, not contributing to his present problem. Chest x-ray and CAT scan shows possible pneumonia.  The patient denie"
+pneumonia,9,3409,"The patient underwent a scalp skin biopsy with pathology specimen obtained.   At the time of discharge, the patient had improved."
+pneumonia,8,3332,Pneumonia in the face of fairly severe Crohn disease with protein-losing enteropathy and severe malnutrition with anasarca.  He also has anemia and le
+pneumonia,7,4515,Abnormal EKG and rapid heart rate.  The patient came to the emergency room.  Initially showed atrial fibrillation with rapid ventricular response.  It
+pneumonia,7,4193,"Peripheral effusion on the CAT scan.  The patient is a 70-year-old Caucasian female with prior history of lung cancer, status post upper lobectomy.  S"
+pneumonia,5,3979,"A 49-year-old man with respiratory distress, history of coronary artery disease with prior myocardial infarctions, and recently admitted with pneumoni"
+pneumonia,5,3438,"The patient is a very pleasant 72-year-old female with previous history of hypertension and also recent diagnosis of C. diff,  presents to the hospita"
+pneumonia,5,1950,Mother states he has been wheezing and coughing.
+pneumonia,4,1936,A 3-year-old abrupt onset of cough and increased work of breathing.
+pneumonia,4,1910,"Fever, otitis media, and possible sepsis."
+pneumonia,3,3109,"Hospice care for a 41-year-old man with the AIDS complicated with recent cryptococcal infection, disseminated MAC and Kaposi's sarcoma."
+heart_failure,16,4500,"Congestive heart failure (CHF).  The patient is a 75-year-old gentleman presented through the emergency room.  Symptoms are of shortness of breath, fa"
+heart_failure,16,3280,"Nonischemic cardiomyopathy, branch vessel coronary artery disease, congestive heart failure - NYHA Class III, history of nonsustained ventricular tach"
+heart_failure,14,4451,A 63-year-old man with a dilated cardiomyopathy presents with a chief complaint of heart failure.  He has noted shortness of breath with exertion and 
+heart_failure,14,3977,Congestive heart failure (CHF) with left pleural effusion.  Anemia of chronic disease.
+heart_failure,14,1441,Congestive heart failure due to rapid atrial fibrillation and systolic dysfunction.
+heart_failure,12,3979,"A 49-year-old man with respiratory distress, history of coronary artery disease with prior myocardial infarctions, and recently admitted with pneumoni"
+heart_failure,11,3339,"Patient with one-week history of increased progressive shortness of breath, orthopnea for the past few nights, mild increase in peripheral edema, and "
+heart_failure,10,4526,A routine return appointment for a 71-year-old woman with chronic atrial fibrillation.  Chief complaint today is shortness of breath.
+heart_failure,9,3233,A 93-year-old female called up her next-door neighbor to say that she was not feeling well.  The patient was given discharge instructions on dementia 
+heart_failure,9,3105,Initial visit for a 95-year-old gentleman with a Hospice diagnosis of CHF.
+heart_failure,8,3265,"Seizure, hypoglycemia, anemia, dyspnea, edema. colon cancer status post right hemicolectomy, hospital-acquired pneumonia, 
+and congestive heart failu"
+heart_failure,7,4592,"Abnormal echocardiogram findings and followup.  Shortness of breath, congestive heart failure, and valvular insufficiency.   The patient complains of "
+heart_failure,7,4129,"Sick sinus syndrome, atrial fibrillation, pacemaker dependent, mild cardiomyopathy with ejection fraction 40% and no significant decompensation, and d"
+heart_failure,6,4511,"Atrial fibrillation and shortness of breath.  The patient is an 81-year-old gentleman with shortness of breath, progressively worsening, of recent ons"
+heart_failure,6,4439,"Elevated BNP.  Diastolic heart failure, not contributing to his present problem. Chest x-ray and CAT scan shows possible pneumonia.  The patient denie"
+heart_failure,6,3595,Dysphagia and hematemesis while vomiting.  Diffuse esophageal dilatation/hematemesis
+heart_failure,6,3400,"A woman presented to the ER with complaints of nausea, vomiting, and epigastric discomfort, ongoing for about 4 to 5 months."
+heart_failure,5,4515,Abnormal EKG and rapid heart rate.  The patient came to the emergency room.  Initially showed atrial fibrillation with rapid ventricular response.  It
+heart_failure,5,3360,Patient with a past medical history of atrial fibrillation and arthritis complaining of progressively worsening shortness of breath.
+heart_failure,5,3351,"Patient with osteoarthritis and osteoporosis with very limited mobility, depression, hypertension, hyperthyroidism, right breast mass, and chronic ren"
+heart_failure,5,3048,Followup on chronic kidney disease.
+heart_failure,4,3447,Patient complaining of cough and blood mixed with sputum production with a past medical history significant for asbestos exposure.
+heart_failure,4,3054,"Patient with a history of coronary artery disease, hypertension, diabetes, and stage III CKD."
+heart_failure,4,2905,Patient reports a rotational sensation upon arising from the bed or chair that lasts for several minutes and requires her to sit back down and stay in
+heart_failure,3,1750,MRI - Intracerebral hemorrhage (very acute clinical changes occurred immediately prior to scan).
+atrial_fib,20,1091,"Patient with a history of atrial fibrillation in the past, more recently who has had atrial flutter.  The patient has noted some lightheadedness as we"
+atrial_fib,12,4510,Patient with past medical history significant for coronary artery disease status post bypass grafting surgery and history of a stroke with residual le
+atrial_fib,11,4573,"The patient is a very pleasant 62-year-old African American female with a history of hypertension, hypercholesterolemia, and CVA, referred for evaluat"
+atrial_fib,11,4538,"Patient with atrial fibrillation with slow ventricular response, partially due to medications."
+atrial_fib,11,4515,Abnormal EKG and rapid heart rate.  The patient came to the emergency room.  Initially showed atrial fibrillation with rapid ventricular response.  It
+atrial_fib,11,4189,"A middle-aged white female undergoing autologous stem cell transplant for multiple myeloma, now with paroxysmal atrial fibrillation."
+atrial_fib,10,4526,A routine return appointment for a 71-year-old woman with chronic atrial fibrillation.  Chief complaint today is shortness of breath.
+atrial_fib,9,3273,"Patient with Hypertension, atrial fibrillation, large cardioembolic stroke initially to the right brain requesting medical management"
+atrial_fib,8,3048,Followup on chronic kidney disease.
+atrial_fib,8,1450,A critically ill 67-year-old with multiple medical problems probably still showing signs of volume depletion with hypotension and atrial flutter with 
+atrial_fib,8,1445,"Atrial fibrillation with rapid ventricular response, Wolff-Parkinson White Syndrome, recent aortic valve replacement with bioprosthetic Medtronic valv"
+atrial_fib,7,4247,A patient with non-Q-wave myocardial infarction.  No definite chest pains.  The patient is breathing okay.  The patient denies orthopnea or PND.
+atrial_fib,7,1095,Cardioversion.  An 86-year-old woman with a history of aortic valve replacement in the past with paroxysmal atrial fibrillation
+atrial_fib,6,4511,"Atrial fibrillation and shortness of breath.  The patient is an 81-year-old gentleman with shortness of breath, progressively worsening, of recent ons"
+atrial_fib,6,3342,Patient with a diagnosis of stroke.
+atrial_fib,6,1089,Direct current cardioversion.  Successful direct current cardioversion with restoration of sinus rhythm from atrial fibrillation with no immediate com
+atrial_fib,5,2756,A pleasant gentleman with a history of Wilson's disease who has been treated with penicillamine.
+atrial_fib,5,1556,MRI T-spine and CXR - Aortic Dissection.
+atrial_fib,5,1380,General Medicine SOAP note.
+atrial_fib,4,3102,"Patient with metastatic non-small-cell lung cancer, on hospice with inferior ST-elevation MI.  The patient from prior strokes has expressive aphasia, "
+atrial_fib,4,64,"Adenocarcinoma of the prostate.  The patient underwent a transrectal ultrasound and biopsy and was found to have a Gleason 3+4 for a score of 7, 20% o"
+atrial_fib,3,4805,No chest pain with exercise and no significant ECG changes with exercise. Poor exercise capacity 6 weeks following an aortic valve replacement and sin
+atrial_fib,3,3664,"Status post colonoscopy.  After discharge, experienced bloody bowel movements and returned to the emergency department for evaluation."
+atrial_fib,3,3461,The patient presented to the emergency room last evening with approximately 7- to 8-day history of abdominal pain which has been persistent.
+atrial_fib,3,3233,A 93-year-old female called up her next-door neighbor to say that she was not feeling well.  The patient was given discharge instructions on dementia 
+atrial_fib,3,3232,"This is a 53-year-old man, who presented to emergency room with multiple complaints including pain from his hernia, some question of blood in his stoo"
+cad_mi,12,4247,A patient with non-Q-wave myocardial infarction.  No definite chest pains.  The patient is breathing okay.  The patient denies orthopnea or PND.
+cad_mi,10,3325,"The patient is a 35-year-old lady who was admitted with chief complaints of chest pain, left-sided with severe chest tightness after having an emotion"
+cad_mi,8,1440,"He is a 67-year-old man who suffers from chronic anxiety and coronary artery disease and DJD.  He has been having some chest pains, but overall he doe"
+cad_mi,8,1113,"Cardiac Catheterization - An obese female with a family history of coronary disease and history of chest radiation for Hodgkin disease, presents with "
+cad_mi,7,4511,"Atrial fibrillation and shortness of breath.  The patient is an 81-year-old gentleman with shortness of breath, progressively worsening, of recent ons"
+cad_mi,7,4178,Cardiology consultation regarding preoperative evaluation for right hip surgery.  Patient with a history of coronary artery disease status post bypass
+cad_mi,7,3391,A 48-year-old white married female presents in the emergency room after two days of increasing fever with recent diagnosis of urinary tract infection 
+cad_mi,7,1434,A lady was admitted to the hospital with chest pain and respiratory insufficiency.  She has chronic lung disease with bronchospastic angina.
+cad_mi,7,1105,Percutaneous intervention with drug-eluting stent placement to the ostium of the PDA.
+cad_mi,6,4500,"Congestive heart failure (CHF).  The patient is a 75-year-old gentleman presented through the emergency room.  Symptoms are of shortness of breath, fa"
+cad_mi,6,3810,"Patient with a history of coronary artery disease, status post coronary artery bypass grafting presented to the emergency room following a syncopal ep"
+cad_mi,6,3407,"The patient is a 53-year-old woman with history of hypertension, diabetes, and depression.  Serotonin syndrome secondary to high doses of Prozac and a"
+cad_mi,6,3349,Consultation for jaw pain.
+cad_mi,6,2979,"Patient with a history of coronary artery disease, congestive heart failure, COPD, hypertension, and renal insufficiency."
+cad_mi,6,1106,"Left Cardiac Catheterization, Left Ventriculography, Coronary Angiography and Stent Placement."
+cad_mi,6,744,Left heart catheterization with left ventriculography and selective coronary angiography.  Percutaneous transluminal coronary angioplasty and stent pl
+cad_mi,5,3986,"Need for cardiac catheterization.  Coronary artery disease, chest pain, history of diabetes, history of hypertension, history of obesity,  a 1.1 cm le"
+cad_mi,5,3853,Patient complains of chest pain - possible esophageal reflux
+cad_mi,5,3430,"A 37-year-old admitted through emergency, presented with symptoms of chest pain, described as a pressure-type dull ache and discomfort in the precordi"
+cad_mi,5,3396,"A white male veteran with multiple comorbidities, who has a history of bladder cancer diagnosed approximately two years ago by the VA Hospital."
+cad_mi,5,3102,"Patient with metastatic non-small-cell lung cancer, on hospice with inferior ST-elevation MI.  The patient from prior strokes has expressive aphasia, "
+cad_mi,5,3048,Followup on chronic kidney disease.
+cad_mi,5,1262,"Selective coronary angiography of the right coronary artery, left main LAD, left circumflex artery, left ventricular catheterization, left ventricular"
+cad_mi,5,1098,"White male with onset of chest pain, with history of on and off chest discomfort over the past several days."
+cad_mi,5,1096,Cardiac catheterization and coronary intervention report.
+cad_mi,5,748,"Left heart catheterization, left ventriculography, selective coronary angiography, and right femoral artery approach."
+cad_mi,5,735,"Left heart catheterization, coronary angiography, and left ventriculogram.  No angiographic evidence of coronary artery disease.  Normal left ventricu"
+cad_mi,4,4515,Abnormal EKG and rapid heart rate.  The patient came to the emergency room.  Initially showed atrial fibrillation with rapid ventricular response.  It
+cad_mi,4,4303,"Lightheaded, dizziness, and palpitation.  This morning, the patient experienced symptoms of lightheaded, dizziness, felt like passing out; however, th"
+cad_mi,4,3429,Patient was brought in the Emergency Room following an episode of syncope.  The patient relates that he may have had a seizure activity prior to that.
+cad_mi,4,3339,"Patient with one-week history of increased progressive shortness of breath, orthopnea for the past few nights, mild increase in peripheral edema, and "
+cad_mi,4,3076,"Male with a history of therapy-controlled hypertension, borderline diabetes, and obesity.  Risk factors for coronary heart disease."
+cad_mi,4,3014,"Management of end-stage renal disease (ESRD), the patient on chronic hemodialysis, being admitted for chest pain."
+cad_mi,4,1732,"Patient with chest pains, CAD, and cardiomyopathy."
+cad_mi,4,1554,Myocardial perfusion imaging - patient had previous abnormal stress test.  Stress test with imaging for further classification of CAD and ischemia.
+cad_mi,4,1483,Consultation - an 87-year-old white female with weakness and a history of polymyositis.
+cad_mi,4,967,Selective coronary angiography.  Placement of overlapping 3.0 x 18 and 3.0 x 8 mm Xience stents in the proximal right coronary artery.  Abdominal aort
+cad_mi,4,747,"Left heart catheterization, left ventriculography, coronary angiography, and successful stenting of tight lesion in the distal circumflex and moderate"
+cad_mi,3,4573,"The patient is a very pleasant 62-year-old African American female with a history of hypertension, hypercholesterolemia, and CVA, referred for evaluat"
+cad_mi,3,4186,"The patient is an 84-year-old female presented to emergency room with shortness of breath, fatigue, and tiredness.  Low-grade fever was noted last few"
+cad_mi,3,3856,Patient in ER complaining of shortness of breath (COPD)
+cad_mi,3,1598,Right pontine pyramidal tract infarct.
+cad_mi,3,1445,"Atrial fibrillation with rapid ventricular response, Wolff-Parkinson White Syndrome, recent aortic valve replacement with bioprosthetic Medtronic valv"
+cad_mi,3,970,"Selective coronary angiography, left heart catheterization with hemodynamics, LV gram with power injection, right femoral artery angiogram, closure of"
+cad_mi,3,764,Left heart catheterization and bilateral selective coronary angiography.   The patient is a 65-year-old male with known moderate mitral regurgitation 
+cad_mi,3,753,Left heart catheterization and bilateral selective coronary angiography. Left ventriculogram was not performed.
+cad_mi,3,745,"Left heart catheterization, bilateral selective coronary angiography, saphenous vein graft angiography, left internal mammary artery angiography, and "
+cad_mi,3,354,"Selective coronary angiography, coronary angioplasty.  Acute non-ST-elevation MI."

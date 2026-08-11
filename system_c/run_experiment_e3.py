@@ -7,12 +7,14 @@ guideline-verifiable output.
 import sys
 import csv
 import time
+import glob
 sys.path.append("E:/Oishee/Thesis/system_c")
 
 from data_loader import DataLoader
 from llm_connector import LLMConnector
 from knowledge_base import KnowledgeBase
 from constraint_checker import ConstraintChecker
+from multihop_reasoner import MultiHopReasoner
 
 # Three hop configurations
 HOP_CONFIGS = {
@@ -36,28 +38,26 @@ HOP_CONFIGS = {
     ],
 }
 
-
-def guess_condition(text):
-    t = text.lower()
-    if "sepsis" in t or "septic" in t:
-        return "sepsis"
-    if "kidney" in t or "creatinine" in t or "renal" in t or "aki" in t:
-        return "aki"
-    if "pneumonia" in t or "consolidation" in t:
-        return "pneumonia"
-    return None
+# Smoke-test limit: set to a small int (e.g. 3) to run only the first N cases.
+# Set to None or 0 to run ALL cases.
+LIMIT = None
 
 
-def run_config(case_text, instructions, llm, kb, checker):
-    """Run one hop configuration, return verdict counts."""
-    accumulated = f"PATIENT CASE:\n{case_text[:2000]}\n\n"
+def run_config(case_text, instructions, llm, checker, condition):
+    """Run one hop configuration, return verdict counts.
+
+    `condition` is the case-level guideline-routing hint (from the pipeline's
+    _guess_condition on description + transcription), applied to every hop --
+    matching the main pipeline's case-level detection instead of re-guessing
+    per hop.
+    """
+    accumulated = f"PATIENT CASE:\n{case_text[:1200]}\n\n"
     counts = {"SUPPORTED": 0, "PARTIAL": 0, "UNSUPPORTED": 0}
 
     for instr in instructions:
         hop_output = llm.ask(accumulated + "\n" + instr,
                              system_prompt="You are a clinical reasoning assistant.")
-        cond = guess_condition(hop_output)
-        check = checker.check_hop(hop_output, condition=cond)
+        check = checker.check_hop(hop_output, condition=condition)
         v = check["verdict"].upper()
         if v in counts:
             counts[v] += 1
@@ -75,13 +75,13 @@ if __name__ == "__main__":
     llm = LLMConnector()
     kb = KnowledgeBase()
     checker = ConstraintChecker(llm, kb)
+    reasoner = MultiHopReasoner(llm, kb, checker)  # reuse the pipeline's detector
 
-    # Use the 6 guideline-matched cases (in-scope) for a fair test
-    with open("E:/Oishee/Thesis/experiment_cases.txt", "r", encoding="utf-8") as f:
-        all_cases = [line.strip() for line in f if line.strip()]
-    # Exclude the 3 out-of-scope cases
-    out_of_scope = {"case_012", "case_034", "case_041"}
-    cases = [c for c in all_cases if not any(o in c for o in out_of_scope)]
+    # E3 is IN-SCOPE only (hop-count ablation). Use the 53 in-scope cases.
+    cases = sorted(glob.glob("E:/Oishee/Thesis/cases_v2/*.txt"))
+    if LIMIT:
+        cases = cases[:LIMIT]
+        print(f"\n*** SMOKE TEST: LIMIT={LIMIT} -- running only the first {LIMIT} cases ***")
 
     print(f"\nRunning on {len(cases)} in-scope cases...\n")
 
@@ -94,11 +94,13 @@ if __name__ == "__main__":
         case = loader.load_case(path)
         fname = case["filename"]
         case_text = case["transcription"] if case["transcription"] else case["full_text"]
-        print(f"[{idx}/{len(cases)}] {fname[:45]}")
+        # Same detector as the pipeline: case-level, from description + transcription.
+        case_condition = reasoner._guess_condition(case.get("description", ""), case_text)
+        print(f"[{idx}/{len(cases)}] {fname[:45]}  (detected: {case_condition})")
 
         row = {"case": fname}
         for config_name, instructions in HOP_CONFIGS.items():
-            counts = run_config(case_text, instructions, llm, kb, checker)
+            counts = run_config(case_text, instructions, llm, checker, case_condition)
             row[f"{config_name}_S"] = counts["SUPPORTED"]
             row[f"{config_name}_P"] = counts["PARTIAL"]
             row[f"{config_name}_U"] = counts["UNSUPPORTED"]

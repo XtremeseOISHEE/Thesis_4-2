@@ -7,31 +7,31 @@ each hop's verdict + reason into error categories.
 import sys
 import csv
 import time
+import glob
+import os
 sys.path.append("E:/Oishee/Thesis/system_c")
 
 from system_c import SystemC
 
-# In-scope cases (genuine sepsis/aki) and out-of-scope cases
-IN_SCOPE = [
-    "case_057_SEPSIS_AKI_Nephrology.txt",
-    "case_024_SEPSIS_SOAP___Chart___Progress_Notes.txt",
-    "case_051_AKI_Nephrology.txt",
-    "case_056_SEPSIS_AKI_Nephrology.txt",
-    "case_049_SEPSIS_PNEUMONIA_AKI_Nephrology.txt",
-    "case_035_AKI_SOAP___Chart___Progress_Notes.txt",
-]
-OUT_OF_SCOPE = [
-    "case_012_SEPSIS_AKI_SOAP___Chart___Progress_Notes.txt",
-    "case_034_PNEUMONIA_AKI_SOAP___Chart___Progress_Notes.txt",
-    "case_041_AKI_SOAP___Chart___Progress_Notes.txt",
-]
+# Same 56 cases as E1: in-scope in cases_v2/, out-of-scope controls in cases_oos/.
+IN_SCOPE_DIR = "E:/Oishee/Thesis/cases_v2"
+OUT_OF_SCOPE_DIR = "E:/Oishee/Thesis/cases_oos"
+
+# Smoke-test limit: set to a small int (e.g. 3) to run only the first N cases.
+# Set to None or 0 to run ALL cases.
+LIMIT = None
 
 
-def categorize(verdict, reason):
+def categorize(verdict, reason, routing_error=False):
     """Classify a non-supported verdict into an error category."""
-    r = reason.lower()
     if verdict == "SUPPORTED":
         return "verified_ok"
+    # Detection-aware: a mis-routed in-scope case had its reasoning checked
+    # against the WRONG guideline family, so an UNSUPPORTED verdict here is a
+    # routing error, not a genuine reasoning/guideline mismatch.
+    if routing_error and verdict == "UNSUPPORTED":
+        return "routing_error"
+    r = reason.lower()
     # Out-of-scope: the reason says the condition/principle is absent/different
     if "absent" in r or "not mentioned" in r or "not addressed" in r or "different" in r:
         return "out_of_scope_disease"
@@ -56,12 +56,26 @@ if __name__ == "__main__":
     categories = {}
     rows = []
 
-    all_cases = [(c, "in_scope") for c in IN_SCOPE] + \
-                [(c, "out_of_scope") for c in OUT_OF_SCOPE]
+    # Scope is determined by WHICH FOLDER the case is in (same as E1) --
+    # NOT by re-detecting the condition.
+    in_scope = sorted(glob.glob(os.path.join(IN_SCOPE_DIR, "*.txt")))
+    out_of_scope = sorted(glob.glob(os.path.join(OUT_OF_SCOPE_DIR, "*.txt")))
+    all_cases = [(p, "in_scope") for p in in_scope] + \
+                [(p, "out_of_scope") for p in out_of_scope]
+    if LIMIT:
+        all_cases = all_cases[:LIMIT]
+        print(f"*** SMOKE TEST: LIMIT={LIMIT} -- running only the first {LIMIT} cases ***")
 
-    for fname, scope in all_cases:
-        case = system.loader.load_case(f"E:/Oishee/Thesis/cases/{fname}")
-        print(f"\nAnalyzing [{scope}]: {fname[:45]}")
+    for path, scope in all_cases:
+        case = system.loader.load_case(path)
+        fname = case["filename"]
+        case_text = case["transcription"] if case["transcription"] else case["full_text"]
+        # Detection-aware routing check: an in-scope case whose detected condition
+        # differs from its labeled condition was routed to the WRONG guideline family.
+        detected = system.reasoner._guess_condition(case.get("description", ""), case_text)
+        labeled_key = case["condition"].strip().lower()
+        routing_error = (scope == "in_scope") and (detected != labeled_key)
+        print(f"\nAnalyzing [{scope}]: {fname[:45]}  (detected={detected}, labeled={labeled_key})")
         result = system.analyze_case(case)
 
         for step in result["trace"]:
@@ -73,8 +87,8 @@ if __name__ == "__main__":
             if hop_key in hop_errors:
                 hop_errors[hop_key][short] += 1
 
-            # Categorize
-            cat = categorize(verdict, step["verification_reason"])
+            # Categorize (detection-aware)
+            cat = categorize(verdict, step["verification_reason"], routing_error=routing_error)
             categories[cat] = categories.get(cat, 0) + 1
 
             print(f"    {hop_key}: {verdict} -> {cat}")
@@ -87,8 +101,8 @@ if __name__ == "__main__":
                 "category": cat,
             })
 
-        # Pause between cases to stay under Groq's tokens-per-minute rate limit
-        time.sleep(15)
+        # Small pause between cases (network retry in llm_connector handles blips).
+        time.sleep(2)
 
     # Save CSV
     with open("E:/Oishee/Thesis/results_e5.csv", "w", newline="", encoding="utf-8") as f:

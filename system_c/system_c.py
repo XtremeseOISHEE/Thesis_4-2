@@ -28,7 +28,15 @@ class SystemC:
     def analyze_case(self, case):
         """Run full reasoning on a single loaded case dict."""
         case_text = case["transcription"] if case["transcription"] else case["full_text"]
-        trace = self.reasoner.reason(case_text)
+
+        # Detect the condition ONCE from the clinical DESCRIPTION (chief complaint,
+        # weighted heavily) plus the transcription (low-weight fallback) -- NOT from
+        # the gold CONDITION label, which would be label leakage. Threaded into
+        # reason() so every hop filters retrieval on the same stable hint.
+        case_condition = self.reasoner._guess_condition(
+            case.get("description", ""), case_text
+        )
+        trace = self.reasoner.reason(case_text, condition=case_condition)
 
         # Build a final summary diagnosis from the trace
         final_summary = self._summarize(trace)
