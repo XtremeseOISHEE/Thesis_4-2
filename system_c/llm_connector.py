@@ -5,7 +5,7 @@ Currently uses OpenRouter (OpenAI-compatible) with GPT-OSS 120B -- no daily
 token limit. The previous Groq implementation is kept commented as a fallback.
 """
 import time
-import os
+
 from openai import (
     OpenAI,
     APIConnectionError,
@@ -19,10 +19,8 @@ from openai import (
 class LLMConnector:
     def __init__(self, key_path="E:/Oishee/Thesis/openrouter_key.txt",
                  model="openai/gpt-oss-120b"):
-        api_key = os.environ.get("OPENROUTER_API_KEY")   # 1st: environment variable (Streamlit Cloud secrets)
-        if not api_key and os.path.exists(key_path):      # 2nd: fallback to local file (your machine)
-            with open(key_path, "r") as f:
-                api_key = f.read().strip()
+        with open(key_path, "r") as f:
+            api_key = f.read().strip()
         self.client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
             api_key=api_key,
